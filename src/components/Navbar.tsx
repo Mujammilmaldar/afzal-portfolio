@@ -1,12 +1,55 @@
-import Link from 'next/link';
+import Link from "next/link";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav>
-      <Link href="/">Home</Link> | 
-      <Link href="/about">About</Link> | 
-      <Link href="/projects">Projects</Link> | 
-      <Link href="/contact">Contact</Link>
-    </nav>
+    <div className=" bg-primary text-white">
+      <nav className="container py-8 px-6 flex justify-between items-center">
+        <div className="flex text-lg font-medium text-center">
+          {[
+            { href: "/", label: "Home" },
+            { href: "/about", label: "About" },
+            { href: "/projects", label: "Services" },
+            { href: "/projects", label: "Case Studies" },
+            { href: "/contact", label: "Contact" },
+          ].map((item, idx, arr) => (
+            <div
+              key={item.label}
+              className={`flex items-center justify-center px-5 ${
+                idx !== arr.length - 1 ? "border-r border-white/30" : ""
+              }`}
+            >
+              <Link
+                href={item.href}
+                className="hover:text-gray-300 transition-colors duration-300"
+              >
+                {item.label}
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex space-x-4 text-xl">
+          <Link
+            href="#"
+            className="hover:text-gray-300 transition-colors duration-300"
+          >
+            <FaFacebook />
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 transition-colors duration-300"
+          >
+            <FaTwitter />
+          </Link>
+          <Link
+            href="#"
+            className="hover:text-gray-300 transition-colors duration-300"
+          >
+            <FaInstagram />
+          </Link>
+        </div>
+      </nav>
+    </div>
   );
 }

@@ -2,9 +2,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello, I'm [Your Name]</h1>
-      <p>Welcome to my portfolio!</p>
-    </main>
+    <div className=" mx-auto">
+      <div className="relative w-full h-[700px] overflow-hidden">
+        <Image
+          src="/herosection.jpg"
+          alt="Descriptive text"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
   );
 }

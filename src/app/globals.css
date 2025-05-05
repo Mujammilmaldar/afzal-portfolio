@@ -1,26 +1,78 @@
 @import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Font families */
+  --font-heading: "Poppins", Arial;
+  --font-body: "Roboto", sans-serif;
+
+  /* Font sizes */
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h5: 18px;
+  --font-size-p: 16px;
+  --font-size-a: 18px;
+  --font-size-span: 26px;
+  --font-size-small:14px;
+
+  /* Font weights */
+  --font-weight-h1: 700;
+  --font-weight-h2: 700;
+  --font-weight-h5: 600;
+
+  /* Colors */
+  -color-primary: #274584;
+  --color-white: #ffffff;
+  --color-dark: #2b2b2b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme{
+  --color-primary: #274584;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* Typography styles */
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  color: var(--color-primary);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  color: var(--color-primary);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h5 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-h5);
+  color: var(--color-primary);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--font-size-p);
+  color: var(--color-dark);
+}
+
+a {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+span {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-small);
+  font-weight: 300;
+  color: var(--color-primary);
 }
