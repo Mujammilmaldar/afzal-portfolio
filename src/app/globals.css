@@ -23,13 +23,18 @@
   --font-weight-h5: 600;
 
   /* Colors */
-  -color-primary: #274584;
+  --color-primary: #274584;
   --color-white: #ffffff;
   --color-dark: #2b2b2b;
+  --color-primary-two:#CEE1F8;
 }
 
 @theme{
   --color-primary: #274584;
+  --color-secondary:#ffffff;
+  --color-tertiary:#2b2b2b;
+  --color-dark:#111;
+  --color-primary-two:#CEE1F8;
 }
 .container{
   max-width: 1400px;
@@ -47,14 +52,13 @@ h2 {
   font-family: var(--font-heading);
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-h2);
-  color: var(--color-primary);
+  color: #000;
 }
 
 h5 {
   font-family: var(--font-heading);
   font-size: var(--font-size-h5);
   font-weight: var(--font-weight-h5);
-  color: var(--color-primary);
 }
 
 p {
@@ -65,7 +69,7 @@ p {
 
 a {
   font-family: var(--font-heading);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-p);
   font-weight: 400;
   text-decoration: none;
 }
@@ -75,4 +79,18 @@ span {
   font-size: var(--font-size-small);
   font-weight: 300;
   color: var(--color-primary);
+}
+
+.about-us {
+  background-image: url('/about-bg_04.png');
+  background-size: cover;
+  background-position: center;
+}
+
+span.span-for-about{
+  display: flex;
+  padding-bottom: 2px;
+}
+span.span-for-about:hover{
+  color: white;
 }

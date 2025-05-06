@@ -1,16 +1,12 @@
-import Image from "next/image";
-
+import ServicesSection from "@/components/Service";
+import AboutUs from "@/components/AboutUs"
+import Hero from "@/components/Hero"
 export default function Home() {
   return (
-    <div className=" mx-auto">
-      <div className="relative w-full h-[700px] overflow-hidden">
-        <Image
-          src="/herosection.jpg"
-          alt="Descriptive text"
-          fill
-          className="object-cover"
-        />
-      </div>
-    </div>
+    <>
+      <Hero/>
+      <AboutUs/>
+      <ServicesSection />
+    </>
   );
 }
