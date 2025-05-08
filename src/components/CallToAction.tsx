@@ -29,7 +29,7 @@ const CallToAction = () => {
         </div>
 
         {/* Request For Call Back */}
-        <div className="flex-1 rounded-lg p-8 shadow-lg">
+        <div className="flex-1 p-8 shadow-lg">
           <h3 className="!text-white text-3xl font-bold mb-10 pb-3">
             Request For Call Back
           </h3>

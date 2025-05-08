@@ -6,8 +6,8 @@ import { MdCheckCircleOutline } from "react-icons/md";
 const AboutUs = () => {
   return (
     <>
-    <div className="bg-[#CEE1F8]">
-        <div className="container mx-auto px-12 py-18 flex flex-col md:flex-row items-center justify-between gap-10 about-us">
+    <div className="">
+        <div className="container mx-auto px-20 py-18 flex flex-col md:flex-row items-center justify-between gap-10 about-us">
           {/* Left Section */}
           <div className="md:w-2/4 space-y-6">
             <div className="space-y-4">
@@ -50,19 +50,11 @@ const AboutUs = () => {
               <p className="text-gray-500 text-sm">CEO Manager</p>
             </div>
 
-            <div>
-              <Image
-                src="/signature.png"
-                alt="Signature"
-                width={150}
-                height={50}
-                className="mt-2"
-              />
-            </div>
+            
           </div>
 
           {/* Right Section */}
-          <div className="md:w-1/3 relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+          <div className="md:w-[40%] relative h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/aboutimage.jpg"
               fill

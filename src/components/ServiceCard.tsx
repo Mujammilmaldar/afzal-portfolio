@@ -17,12 +17,7 @@ export default function ServiceCard({
           {title}
         </h3>
         <p className="text-gray-500 text-sm text-left mb-4">{description}</p>
-        <button className="mt-auto text-sm font-medium flex items-center gap-2 text-gray-900 cursor-pointer hover:text-primary transition duration-300">
-          <span className="inline-block flex items-center justify-center bg-white shadow-md w-[28px] h-[28px] rounded-full transition hover:bg-primary hover:text-white span-for-about">
-            →
-          </span>
-          Read More
-        </button>
+        
       </div>
     </div>
   );
