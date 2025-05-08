@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import Image from "next/image";
 const Hero = () => {
@@ -17,13 +18,13 @@ const Hero = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 md:px-8">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <div className="absolute inset-0 z-20 flex flex-col items-center top-[30px] text-center px-4 md:px-8">
+          <div className=" mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold !text-white mb-6 uppercase">
               Inspire your audience to act.
             </h1>
-            <h5 className="text-white font-light max-w-2xl mx-auto leading-relaxed">
-              Energize, inspire, and transform your audience's customer
+            <h5 className="text-white font-light max-w-2xl mx-auto leading-relaxed ">
+              Energize, inspire, and transform your audience&apos;s customer
               experience and marketing by adding the most influential marketer
               in the world to your agenda.
             </h5>

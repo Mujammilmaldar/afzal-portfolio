@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <>
     <div className="bg-[#CEE1F8]">
-        <div className="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center justify-between gap-10 about-us">
+        <div className="container mx-auto px-12 py-18 flex flex-col md:flex-row items-center justify-between gap-10 about-us">
           {/* Left Section */}
           <div className="md:w-2/4 space-y-6">
             <div className="space-y-4">
