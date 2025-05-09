@@ -1,17 +1,23 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 import Image from "next/image";
 import { MdCheckCircleOutline } from "react-icons/md";
+import AnimatedFadeIn from "./AnimatedHeading";
 
 const AboutUs = () => {
   return (
     <>
-    <div className="">
-        <div className="container mx-auto px-20 py-18 flex flex-col md:flex-row items-center justify-between gap-10 about-us">
+      <div className="">
+        <div
+          id="about"
+          className="container mx-auto px-20 py-18 flex flex-col md:flex-row items-center justify-between gap-10 about-us"
+        >
           {/* Left Section */}
           <div className="md:w-2/4 space-y-6">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold">About us</h2>
+              <AnimatedFadeIn direction="up">
+                <h2 className="text-4xl font-bold">About us</h2>
+              </AnimatedFadeIn>
               <h5 className="text-lg font-semibold text-dark">
                 Other tech services companies have embraced ’design thinking’, a
                 problem-solving philosophy that leads to products people
@@ -49,14 +55,12 @@ const AboutUs = () => {
               <h5 className="font-semibold text-gray-900">Mike Davidson</h5>
               <p className="text-gray-500 text-sm">CEO Manager</p>
             </div>
-
-            
           </div>
 
           {/* Right Section */}
           <div className="md:w-[40%] relative h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/aboutimage.jpg"
+              src="/about.webp"
               fill
               alt="CEO"
               className="object-cover rounded-xl"
@@ -65,7 +69,7 @@ const AboutUs = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

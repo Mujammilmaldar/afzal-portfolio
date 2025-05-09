@@ -7,11 +7,11 @@ export default function Navbar() {
       <nav className="container py-8 px-6 flex justify-between items-center">
         <div className="flex text-lg font-medium text-center">
           {[
-            { href: "/", label: "Home" },
-            { href: "/about", label: "About" },
-            { href: "/projects", label: "Services" },
-            { href: "/projects", label: "Case Studies" },
-            { href: "/contact", label: "Contact" },
+            { href: "/#hero", label: "Home" },
+            { href: "/#about", label: "About" },
+            { href: "/#services", label: "Services" },
+            { href: "/#casestudies", label: "Case Studies" },
+            { href: "/#calltoaction", label: "Contact" },
           ].map((item, idx, arr) => (
             <div
               key={item.label}

@@ -9,6 +9,7 @@ import { BsStarHalf } from "react-icons/bs";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import AnimatedFadeIn from './AnimatedHeading';
 
 const TestimonialSection = () => {
   const testimonials = [
@@ -47,9 +48,11 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section id='testimonial' className="py-16">
       <div className="container mx-auto px-4">
+      <AnimatedFadeIn direction="up">
         <h2 className="text-4xl font-bold text-center mb-4">Client Testimonials</h2>
+        </AnimatedFadeIn>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
           On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.
         </p>

@@ -1,25 +1,30 @@
-'use client';
-import React, { useState } from 'react';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import { url } from "inspector";
+import AnimatedFadeIn from "./AnimatedHeading";
 
 const slides = [
   {
-    title: 'Pleasurē',
+    title: "Pleasurē",
     description:
-      'We go deep to unlock insight and have the courage to act. We bring the right people together to challenge established thinking and drive transformation. Be work with our clients ...',
-    image: '/aboutimage.jpg',
+      "We go deep to unlock insight and have the courage to act. We bring the right people together to challenge established thinking and drive transformation. Be work with our clients ...",
+    image: "/aboutimage.jpg",
+    pathforurl: "case-studies/pleasure",
   },
   {
-    title: 'Innovatē',
+    title: "Innovatē",
     description:
-      'We create solutions that drive innovation and unlock potential. With creativity and strategy combined, we deliver lasting impact.',
-    image: '/aboutimage.jpg',
+      "We create solutions that drive innovation and unlock potential. With creativity and strategy combined, we deliver lasting impact.",
+    image: "/aboutimage.jpg",
+    pathforurl: "case-studies/innovatie",
   },
   {
-    title: 'Elevatē',
+    title: "Elevatē",
     description:
-      'Helping businesses reach new heights through transformative digital experiences and powerful design thinking.',
-    image: '/aboutimage.jpg',
+      "Helping businesses reach new heights through transformative digital experiences and powerful design thinking.",
+    image: "/aboutimage.jpg",
+    pathforurl: "case-studies/elevate",
   },
 ];
 
@@ -27,18 +32,21 @@ const CaseStudies = () => {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  const prevSlide = () =>
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
-  const { title, description, image } = slides[current];
+  const { title, description, image, pathforurl } = slides[current];
 
   return (
-    <div className="bg-[#eef5fd] py-20 flex justify-center relative">
+    <div
+      id="casestudies"
+      className="bg-[#eef5fd] py-20 flex justify-center relative"
+    >
       <div className="bg-white relative max-w-5xl min-h-[550px] w-full rounded-xl shadow-lg px-12 py-16 flex items-start">
         {/* Background title */}
         <h1 className="absolute text-5xl font-serif font-semibold -top-8 left-10 z-10">
           Featured cases
         </h1>
-
         {/* Side Image */}
         <div className="absolute w-[440px] h-[370px] -left-24 bottom-15 shadow-xl rounded z-0">
           <Image
@@ -61,7 +69,10 @@ const CaseStudies = () => {
             </div>
             <p className="text-gray-600 leading-relaxed">{description}</p>
           </div>
-          <button className="mt-8 border border-blue-600 text-blue-600 font-medium px-6 py-2 rounded-full hover:bg-blue-50 transition">
+          <button
+            className="mt-8 border border-blue-600 text-blue-600 font-medium px-6 py-2 rounded-full hover:bg-blue-50 transition"
+            onClick={() => window.location.href = pathforurl!}
+          >
             Read More
           </button>
         </div>
@@ -88,7 +99,7 @@ const CaseStudies = () => {
             <div
               key={index}
               className={`h-[6px] rounded-full ${
-                current === index ? 'w-16 bg-blue-600' : 'w-6 bg-blue-300'
+                current === index ? "w-16 bg-blue-600" : "w-6 bg-blue-300"
               } transition-all duration-300`}
             />
           ))}

@@ -9,15 +9,17 @@ import {
   FaClipboardList,
   FaUsers,
 } from "react-icons/fa";
-
+import AnimatedFadeIn from "./AnimatedHeading";
 export default function ServicesSection() {
   return (
-    <section className="bg-gray-50 py-16 px-4 md:px-12">
+    <section id="services" className="bg-gray-50 py-16 px-4 md:px-12">
       <div className="container mx-auto text-center">
         <p className="text-red-600 font-medium uppercase">Our Services</p>
+      <AnimatedFadeIn direction="up">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           High Quality Services
         </h2>
+        </AnimatedFadeIn>
         <div className="grid md:grid-cols-3 bg-[#F9F9F9] p-10">
           <ServiceCard
             icon={<FaCogs />}
