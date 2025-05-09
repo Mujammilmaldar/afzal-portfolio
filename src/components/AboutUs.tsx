@@ -15,7 +15,7 @@ const AboutUs = () => {
           {/* Left Section */}
           <div className="md:w-2/4 space-y-6">
             <div className="space-y-4">
-              <AnimatedFadeIn direction="up">
+              <AnimatedFadeIn direction="right">
                 <h2 className="text-4xl font-bold">About us</h2>
               </AnimatedFadeIn>
               <h5 className="text-lg font-semibold text-dark">
