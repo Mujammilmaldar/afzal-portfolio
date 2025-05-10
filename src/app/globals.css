@@ -121,3 +121,14 @@ span.span-for-about{
 span.span-for-about:hover{
   color: white;
 }
+
+.main-card-service:hover + .down-side-content {
+  top: -50%; /* adjust this for the height you want */
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+.down-side-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
