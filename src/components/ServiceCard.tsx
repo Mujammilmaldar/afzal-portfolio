@@ -21,7 +21,7 @@ export default function ServiceCard({
         </div>
         <div className="down-side-content absolute">
           <div className="card-heading text-center">
-            <h3 className="text-white!">Card Benefits for Afzal</h3>
+            <h3 className="text-white!">Card Benefits for Afzal Sir</h3>
           </div>
           <div className="content text-center w-full mt-3 flex items-center justify-center">
             <p className="text-white! w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium vel laborum!</p>
