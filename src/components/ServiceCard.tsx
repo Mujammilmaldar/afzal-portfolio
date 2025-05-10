@@ -17,7 +17,6 @@ export default function ServiceCard({
           {title}
         </h3>
         <p className="text-gray-500 text-sm text-left mb-4">{description}</p>
-        
       </div>
     </div>
   );

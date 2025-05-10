@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-s
+
 const caseStudies = [
   {
     title: "Pleasurē",
@@ -26,9 +26,12 @@ const caseStudies = [
 
 export default function CaseStudiesPage() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold text-blue-900 mb-12">Case Studies</h1>
-      <div className="grid md:grid-cols-3 gap-12">
+    <section className="max-w-6xl mx-auto mb-13 ">
+      <div className="card-title bg-light p-6 mb-14">
+      <h1 className="text-4xl font-bold  text-primary text-center">Case Studies</h1>
+      </div>
+      <h3 className="font-bold text-2xl text-primary mb-10" >Featured Cases</h3>
+      <div className="grid md:grid-cols-3 mb-3 gap-12">
         {caseStudies.map((study) => (
           <div key={study.slug} className="flex flex-col">
             <div className="w-full h-56 relative mb-6">

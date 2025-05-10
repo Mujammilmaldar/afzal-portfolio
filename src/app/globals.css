@@ -29,10 +29,12 @@
   --color-white: #ffffff;
   --color-dark: #2b2b2b;
   --color-primary-two:#CEE1F8;
+  --color-ligth: #5d7cc15d;
 }
 
 @theme{
   --color-primary: #274584;
+  --color-light: #5d7cc15d;
   --color-secondary:#ffffff;
   --color-tertiary:#2b2b2b;
   --color-dark:#111;

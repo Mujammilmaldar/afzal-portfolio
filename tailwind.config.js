@@ -21,7 +21,6 @@ module.exports = {
     },
   },
 };
-
 module.exports = {
   theme: {
     extend: {
@@ -30,7 +29,8 @@ module.exports = {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
-        dark:'var(--color-dark)',
+        dark: 'var(--color-dark)',
+        light: 'var(--color-light)', // ✅ BUT see note below
       },
     },
   },

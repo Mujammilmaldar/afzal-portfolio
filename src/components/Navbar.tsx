@@ -10,7 +10,7 @@ export default function Navbar() {
             { href: "/#hero", label: "Home" },
             { href: "/#about", label: "About" },
             { href: "/#services", label: "Services" },
-            { href: "/#casestudies", label: "Case Studies" },
+            { href: "/case-studies", label: "Case Studies" },
             { href: "/#calltoaction", label: "Contact" },
           ].map((item, idx, arr) => (
             <div
