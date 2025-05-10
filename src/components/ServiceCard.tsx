@@ -11,25 +11,24 @@ export default function ServiceCard({
 }) {
   return (
     <div className="cards-style">
-
-    <div className="main-card-service p-10 relative shadow-sm hover:shadow-md transition flex gap-4 overflow-hidden">
-      <div className="text-primary text-4xl">{icon}</div>
-      <div className="content px-4">
-        <h3 className="text-lg font-semibold text-dark cursor-pointer text-left mb-3 hover:text-primary">
-          {title}
-        </h3>
-        <p className="text-gray-500 text-sm text-left mb-4">{description}</p>
+      <div className="main-card-service group p-10 relative shadow-sm hover:shadow-md transition flex gap-4 overflow-hidden cursor-pointer">
+        <div className="text-primary text-4xl">{icon}</div>
+        <div className="content px-4">
+          <h3 className="text-lg font-semibold text-dark cursor-pointer text-left mb-3 group-hover:text-primary">
+            {title}
+          </h3>
+          <p className="text-gray-500 text-sm text-left mb-4">{description}</p>
+        </div>
+        <div className="down-side-content absolute">
+          <div className="card-heading text-center">
+            <h3 className="text-white!">Card Benefits for Afzal</h3>
+          </div>
+          <div className="content text-center w-full mt-3 flex items-center justify-center">
+            <p className="text-white! w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium vel laborum!</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="upside-conetnt absolute sec-card-blur -z-1"></div>
-    <div className="down-side-content sec-card-content absolute -z-1">
-      <div className="card-heading">
-        <h2>Card Benefits for Afzal</h2>
-      </div>
-      <div className="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium vel laborum!</p>
-      </div>
-    </div>
     </div>
   );
 }
+
