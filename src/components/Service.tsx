@@ -14,7 +14,7 @@ export default function ServicesSection() {
             High Quality Services
           </h2>
         </AnimatedFadeIn>
-        <div className="grid md:grid-cols-3 bg-[#F9F9F9] p-10">
+        <div className="grid md:grid-cols-3 bg-[#F9F9F9] md:p-1 sm:p-1 lg:p-1">
           <ServiceCard
             icon={<TbSettings size={44} strokeWidth={1.5} />}
             title="Process Development"

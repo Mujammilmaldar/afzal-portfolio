@@ -75,7 +75,7 @@ const TestimonialSection = () => {
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
               <div className="bg-white p-8 rounded-lg shadow-lg relative mb-12 min-h-[250px] flex justify-between cursor-pointer">
-                <div className="flex items-center mb-6">
+                <div className="flex items-center flex-col md:flex-row lg:flex-row mb-6 gap-5">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}

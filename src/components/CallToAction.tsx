@@ -6,7 +6,7 @@ import AnimatedFadeIn from "./AnimatedHeading";
 const CallToAction = () => {
   return (
     <section id="calltoaction" className="bg-[#1f1f1f] py-10">
-      <div className="container mx-auto px-[100px] flex flex-col md:flex-row gap-3">
+      <div className="container mx-auto px-[20px] md:px-[50px] lg:px-[100px] flex flex-col md:flex-row gap-3">
         {/* Contact Details */}
         <div className="bg-[#262626] rounded-lg p-8 flex-1 max-w-[350px] shadow-lg">
         <AnimatedFadeIn direction="up">

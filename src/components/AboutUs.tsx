@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div className="">
         <div
           id="about"
-          className="container mx-auto px-20 py-18 flex flex-col md:flex-row items-center justify-between gap-10 about-us"
+          className="container mx-auto px-4 md:px-10 lg:px-20 py-16 flex flex-col md:flex-row items-center justify-between gap-10 about-us"
         >
           {/* Left Section */}
           <div className="md:w-2/4 space-y-6">
@@ -58,7 +58,7 @@ const AboutUs = () => {
           </div>
 
           {/* Right Section */}
-          <div className="md:w-[40%] relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+          <div className="w-[100%] md:w-[40%] relative h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/about.webp"
               fill

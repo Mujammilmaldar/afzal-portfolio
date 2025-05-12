@@ -18,12 +18,12 @@ const Hero = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="ml-12 absolute inset-0 z-20 flex flex-col justify-end mb-22 items-start px-4 md:px-8">
+        <div className="ml-0 md:ml-12 absolute inset-0 z-20 flex flex-col justify-end mb-22 items-start px-4 md:px-8">
           <div className="mx-0">
-            <h1 className="text-4xl w-[70%] md:text-5xl lg:text-6xl font-bold !text-white mb-6 uppercase">
+            <h1 className="text-3xl! w-[90%] md:text-5xl lg:text-6xl font-bold !text-white mb-2 uppercase">
             Healthcare Digital Marketing Consultant
             </h1>
-            <p className="text-white/80! text-2xl! font-medium italic min-w-[550px] max-w-1/2 leading-relaxed">
+            <p className="text-white/80! sm:text-lg md:text-2xl! font-medium italic lg:min-w-[550px] sm:min-w-[100%] leading-relaxed">
             13+ years of experience. Helping hospitals & doctors with proven digital marketing strategies 
             </p>
             <div className="mt-10">
