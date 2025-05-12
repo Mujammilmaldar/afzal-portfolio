@@ -45,12 +45,13 @@ export default function Navbar() {
   return (
     <div className={`bg-primary text-white ${isScrolled ? "shadow-md" : ""}`}>
       <nav className="container py-4 md:py-8 px-4 md:px-6 flex justify-between items-center relative">
-        <div className="text-xl font-bold">
-          <Link href="/">
-            Afzal
+        <div className="text-xl font-bold flex gap-4">
+        <div
+              className="flex items-center justify-center px-5">
+          <Link href="/" className="text-2xl">
+            Logo
           </Link>
-        </div>
-
+          </div>
         <div className="hidden md:flex text-lg font-medium text-center">
           {navLinks.map((item, idx, arr) => (
             <div
@@ -68,7 +69,7 @@ export default function Navbar() {
             </div>
           ))}
         </div>
-
+        </div>
         <div className="hidden md:flex space-x-4 text-xl">
           <Link
             href="#"
