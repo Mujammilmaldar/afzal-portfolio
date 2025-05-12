@@ -113,12 +113,11 @@ button{
   background-position: center;
 }
 
-@media (max-width:500px){
-  .about-use{
-  background-image: url('/about-bg_04.png');
+@media (min-width:500px){
+  .about-us { /* Fixed class name typo from 'about-use' to 'about-us' */
+    background-image: url('/about-bg_04.png');
   }
 }
-
 span.span-for-about{
   display: flex;
   padding-bottom: 2px;
@@ -155,29 +154,4 @@ span.span-for-about:hover{
 .main-card-service:hover .down-side-content {
   transform: translate(-50%, 10%); /* stops 10% from the top */
   transition: transform 0.7s ease-in-out;
-
-}
-
-.down-side-content {
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  width: 120%;
-  height: 300px;
-  background-color: var(--color-primary);
-  transition: transform 0.7s ease-in-out;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  padding-top: 30px;
-  align-items: center;
-  color: white;
-  text-align: center;
-  pointer-events: none;
-}
-
-.main-card-service.show-on-scroll .down-side-content {
-  transform: translate(-50%, 10%);
 }

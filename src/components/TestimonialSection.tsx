@@ -48,7 +48,7 @@ const TestimonialSection = () => {
   ];
 
   return (
-    <section id='testimonial' className="py-16">
+    <section id='testimonial' className=" py-4 md:py-8 lg:py-16">
       <div className="container mx-auto px-4">
       <AnimatedFadeIn direction="up">
         <h2 className="text-4xl font-bold text-center mb-4">Client Testimonials</h2>
@@ -74,8 +74,8 @@ const TestimonialSection = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="bg-white p-8 rounded-lg shadow-lg relative mb-12 min-h-[250px] flex justify-between cursor-pointer">
-                <div className="flex items-center flex-col md:flex-row lg:flex-row mb-6 gap-5">
+              <div className="bg-white p-2 md:p-4 lg:p-8 rounded-lg shadow-lg relative mb-12 min-h-[250px] flex justify-between cursor-pointer">
+                <div className="flex items-center flex-col md:flex-row lg:flex-row mb-2 md:mb-3 lg:mb-6 gap-5">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
