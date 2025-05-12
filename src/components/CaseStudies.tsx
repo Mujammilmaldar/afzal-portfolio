@@ -35,8 +35,14 @@ const CaseStudies: React.FC = () => {
 
   return (
     <section id="casestudies" className="bg-[#eef5fd] py-12 px-4 md:py-20">
-      <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg flex flex-col md:flex-row">
+      <div className="max-w-5xl mx-auto bg-white rounded-xl shadow-lg flex flex-col gap-2">
         {/* Image */}
+        <div className="heading -mt-[20px] ml-7">
+        <AnimatedFadeIn direction="right">
+          <h2 className="text-4xl">Featured Cases</h2>
+        </AnimatedFadeIn>
+        </div>
+        <div className="single-row mt-10 flex lg:flex-row md:flex-col flex-col">
         <div className="relative w-full h-64 md:h-auto md:w-1/2">
           <Image
             src={image}
@@ -107,6 +113,7 @@ const CaseStudies: React.FC = () => {
               View all →
             </a>
           </div>
+        </div>
         </div>
       </div>
     </section>

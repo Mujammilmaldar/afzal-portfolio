@@ -33,8 +33,8 @@ export default function CaseStudiesPage() {
       <div className="card-title bg-light p-6 mb-14">
       <h1 className="text-4xl font-bold  text-primary text-center">Case Studies</h1>
       </div>
-      <h3 className="font-bold text-2xl text-primary mb-10" >Featured Cases</h3>
-      <div className="grid md:grid-cols-3 mb-3 gap-12">
+      <h3 className="font-bold text-2xl text-primary mb-10 px-3" >Featured Cases</h3>
+      <div className="grid md:grid-cols-3 mb-3 gap-12 px-3">
         {caseStudies.map((study) => (
           <div key={study.pathforurl} className="flex flex-col">
             <div className="w-full h-56 relative mb-6">

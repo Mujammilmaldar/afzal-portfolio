@@ -137,12 +137,6 @@ export default function CaseStudyPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-transparent flex items-center">
-          <div className="text-white max-w-2xl px-8 md:px-16">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">{study.title}</h1>
-            <p className="text-lg">{study.description}</p>
-          </div>
-        </div>
       </div>
       <div className="px-4 md:px-8 py-8 space-y-16">
         <div className="max-w-4xl mx-auto">
