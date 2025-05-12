@@ -6,7 +6,7 @@ import AnimatedFadeIn from "./AnimatedHeading";
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="bg-gray-50 py-16 px-4 md:px-12">
+    <section id="services" className="bg-gray-50 lg:py-16 md:py-10 py-4 px-4 md:px-12">
       <div className="container mx-auto text-center">
         <p className="text-red-600 font-medium uppercase">Our Services</p>
         <AnimatedFadeIn direction="up">
