@@ -27,7 +27,7 @@ const Hero = () => {
             13+ years of experience. Helping hospitals & doctors with proven digital marketing strategies 
             </p>
             <div className="mt-10">
-              <button className="bg-primary text-white hover:bg-gray-100 px-8 py-3 rounded-full font-medium text-lg transition-all hover:shadow-lg">
+              <button className="bg-primary text-white hover:bg-gray-100 px-8 py-3 rounded-full font-medium text-lg transition-all hover:shadow-lg hover:bg-primary hover:text-white" onClick={() => window.location.href='#calltoaction'}>
                 Consult Now
               </button>
             </div>

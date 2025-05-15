@@ -1,7 +1,14 @@
 "use client";
 
 import ServiceCard from "@/components/ServiceCard";
-import { TbSettings, TbRuler, TbChartLine, TbHelpOctagon, TbClipboardList, TbUsers } from 'react-icons/tb';
+import { 
+  Settings2, 
+  BarChart3,
+  LayoutDashboard, 
+  MessageSquare, 
+  Video, 
+  Code2 
+} from 'lucide-react';
 import AnimatedFadeIn from "./AnimatedHeading";
 
 export default function ServicesSection() {
@@ -16,34 +23,46 @@ export default function ServicesSection() {
         </AnimatedFadeIn>
         <div className="grid md:grid-cols-3 bg-[#F9F9F9] md:p-1 sm:p-1 lg:p-1">
           <ServiceCard
-            icon={<TbSettings size={44} strokeWidth={1.5} />}
-            title="Process Development"
-            description="Sagitis himos pulvinar morb sociis laoreet posuere enim non auctor etiam pretium libero"
+            icon={<Settings2 size={44} />}
+            title="Healthcare SEO"
+            description="A process of optimizing your medical website to appear higher in Google organic results when patients look for healthcare services online"
+            benefits="benefits"
+            benefitsdesc = "Drives organic traffic, attracts targeted patients, builds credibility & trust, and delivers long-term, cost-effective growth."
           />
           <ServiceCard
-            icon={<TbRuler size={44} strokeWidth={1.5} />}
-            title="Strategy & Planning"
-            description="Sagitis himos pulvinar morb sociis laoreet posuere enim non auctor etiam pretium libero"
+            icon={<LayoutDashboard size={44} />}
+            title="Google Ads"
+            description="Platform to run ads on Google that appear at the top of search results when patients search for healthcare services online."
+            benefits="benefits"
+            benefitsdesc = "Instant visibility on Google, targeted reach, flexible budgets, local targeting, measurable ROI, increased appointments and fast results."
           />
           <ServiceCard
-            icon={<TbChartLine size={44} strokeWidth={1.5} />}
-            title="Business Planning"
-            description="Sagitis himos pulvinar morb sociis laoreet posuere enim non auctor etiam pretium libero"
+            icon={<BarChart3 size={44} />}
+            title="Analytics + LeadTracking"
+            description="Analytics and lead tracking are done by integrating tools like GA4, GTM, call, whatsapp & form tracking through coding on websites."
+            benefits="benefits"
+            benefitsdesc = "Data-driven insights, measures campaign performance, tracks patient inquiries, optimizes marketing and improves conversion rates."
           />
           <ServiceCard
-            icon={<TbHelpOctagon size={44} strokeWidth={1.5} />}
-            title="Business Support"
-            description="Sagitis himos pulvinar morb sociis laoreet posuere enim non auctor etiam pretium libero"
+            icon={<MessageSquare size={44} />}
+            title="Social Media Marketing"
+            description="It involves creating educational content, running ads, engaging patients, and managing profiles on platforms Social Media."
+            benefits="benefits"
+            benefitsdesc = "Boosts brand awareness, educates patients, builds trust, engages audiences, promotes services, and drives traffic to healthcare websites."
           />
           <ServiceCard
-            icon={<TbClipboardList size={44} strokeWidth={1.5} />}
-            title="Audit & Evaluation"
-            description="Sagitis himos pulvinar morb sociis laoreet posuere enim non auctor etiam pretium libero"
+            icon={<Video size={44} />}
+            title="Video development"
+            description="Create engaging videos to showcase your healthcare services, educate patients, and build trust through compelling visual content."
+            benefits="benefits"
+            benefitsdesc = "Enhances patient education, builds trust, increases engagement, improves communication & boosts brand awareness."
           />
           <ServiceCard
-            icon={<TbUsers size={44} strokeWidth={1.5} />}
-            title="Consultancy & Advice"
-            description="Sagitis himos pulvinar morb sociis laoreet posuere enim non auctor etiam pretium libero"
+            icon={<Code2 size={44} />}
+            title="Website development"
+            description="Create a custom website with clear navigation, mobile responsive, fast loading, quality content and easy appointment booking features."
+            benefits="benefits"
+            benefitsdesc = "Builds credibility, improves patient experience, boosts online visibility, drives appointments and provides information efficiently."
           />
         </div>
       </div>

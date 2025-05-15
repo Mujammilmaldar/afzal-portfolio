@@ -19,40 +19,44 @@ const AboutUs = () => {
                 <h2 className="text-4xl font-bold">About us</h2>
               </AnimatedFadeIn>
               <h5 className="text-lg font-semibold text-dark">
-                Other tech services companies have embraced ’design thinking’, a
-                problem-solving philosophy that leads to products people
-                actually want to use.
+                With over 13 years of specialized experience in healthcare
+                digital marketing, I have helped hospitals, clinics, and doctors
+                build a powerful online presence—driving more patients, reducing
+                lead costs, and improving conversions..
               </h5>
               <p className="text-gray-600">
-                Solving social problems requires leaders from foundations,
-                businesses, nonprofits, and governments to reimagine the systems
-                and relationships that shape our world. We strive for a deep
-                understanding of how to create social change.
+                I understand the unique challenges of marketing for hospitals
+                and doctors - regulations, patient trust, hyper-local targeting
+                and the value of reputation. Whether it’s a surgeon looking to
+                rank on Google or a multi-speciality hospital needs branding on
+                digital channels, I bring healthcare specific strategy,
+                creativity and execution to every project.
               </p>
             </div>
 
             {/* Feature Icons */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div className="flex flex-wrap pt-4">
               {[
-                "Customized Advice",
-                "24/7 Customer Support",
-                "Prompt Solution Delivery",
-                "Personalized Knowledge",
-                "Trusted Expertise",
+                "Deep knowledge of healthcare marketing dynamics",
+                "Specialist in patient-centric messaging ",
+                "Results-driven digital campaigns for private practices and hospitals",
+                "Healthcare video storytelling for reputation and lead generation",
+                "CRO expert with focus on patient appointment booking journeys",
                 "On-Demand Assistance",
               ].map((text, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-2 text-gray-800 text-sm"
+                  className="w-full sm:w-1/2 flex items-center gap-2 text-gray-800 text-sm mb-2"
                 >
-                  <MdCheckCircleOutline className="text-green-600 text-xl" />
+                  <MdCheckCircleOutline className="text-green-600 w-5 h-5 flex-shrink-0" />
+
                   {text}
                 </div>
               ))}
             </div>
 
             <div className="pt-4">
-              <h5 className="font-semibold text-gray-900">Mike Davidson</h5>
+              <h5 className="font-semibold text-gray-900">Afzal</h5>
               <p className="text-gray-500 text-sm">CEO Manager</p>
             </div>
           </div>
