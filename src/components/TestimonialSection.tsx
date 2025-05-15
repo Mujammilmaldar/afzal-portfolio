@@ -20,7 +20,7 @@ const TestimonialSection = () => {
       content:
         "Afzal took care of our digital activities, he is trustworthy & knowledgeable. I feel a good amount of difference & results since he took over our digital activities. Wishing him success in his career & hope he continue the good work he is doing.",
       image: "/testimonial1.png",
-      rating: 4.5,
+      rating: 5,
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const TestimonialSection = () => {
       content:
         "I came to know about Afzal through one of my friend, we started working on our digital presence. He is proactive & he understands the digital sphere very well. I am happy with the work he is doing for us.",
       image: "/testimonial1.png",
-      rating: 4,
+      rating: 5,
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ const TestimonialSection = () => {
       content:
         "I have been associated with Afzal Khan for a project, it was a 3 months project. He not only helped me to achieve the desired resutls, he also taught me few interesting things about this medium. He is an astute player of this field, looking forward to associate with him again.",
       image: "/testimonial1.png",
-      rating: 3.5,
+      rating: 5,
     },
   ];
 

@@ -26,42 +26,42 @@ export default function ServicesSection() {
             icon={<Settings2 size={44} />}
             title="Healthcare SEO"
             description="A process of optimizing your medical website to appear higher in Google organic results when patients look for healthcare services online"
-            benefits="benefits"
+            benefits="Benefits"
             benefitsdesc = "Drives organic traffic, attracts targeted patients, builds credibility & trust, and delivers long-term, cost-effective growth."
           />
           <ServiceCard
             icon={<LayoutDashboard size={44} />}
             title="Google Ads"
             description="Platform to run ads on Google that appear at the top of search results when patients search for healthcare services online."
-            benefits="benefits"
+            benefits="Benefits"
             benefitsdesc = "Instant visibility on Google, targeted reach, flexible budgets, local targeting, measurable ROI, increased appointments and fast results."
           />
           <ServiceCard
             icon={<BarChart3 size={44} />}
             title="Analytics + LeadTracking"
             description="Analytics and lead tracking are done by integrating tools like GA4, GTM, call, whatsapp & form tracking through coding on websites."
-            benefits="benefits"
+            benefits="Benefits"
             benefitsdesc = "Data-driven insights, measures campaign performance, tracks patient inquiries, optimizes marketing and improves conversion rates."
           />
           <ServiceCard
             icon={<MessageSquare size={44} />}
             title="Social Media Marketing"
             description="It involves creating educational content, running ads, engaging patients, and managing profiles on platforms Social Media."
-            benefits="benefits"
+            benefits="Benefits"
             benefitsdesc = "Boosts brand awareness, educates patients, builds trust, engages audiences, promotes services, and drives traffic to healthcare websites."
           />
           <ServiceCard
             icon={<Video size={44} />}
             title="Video development"
             description="Create engaging videos to showcase your healthcare services, educate patients, and build trust through compelling visual content."
-            benefits="benefits"
+            benefits="Benefits"
             benefitsdesc = "Enhances patient education, builds trust, increases engagement, improves communication & boosts brand awareness."
           />
           <ServiceCard
             icon={<Code2 size={44} />}
             title="Website development"
             description="Create a custom website with clear navigation, mobile responsive, fast loading, quality content and easy appointment booking features."
-            benefits="benefits"
+            benefits="Benefits"
             benefitsdesc = "Builds credibility, improves patient experience, boosts online visibility, drives appointments and provides information efficiently."
           />
         </div>

@@ -54,11 +54,6 @@ const AboutUs = () => {
                 </div>
               ))}
             </div>
-
-            <div className="pt-4">
-              <h5 className="font-semibold text-gray-900">Afzal</h5>
-              <p className="text-gray-500 text-sm">CEO Manager</p>
-            </div>
           </div>
 
           {/* Right Section */}
