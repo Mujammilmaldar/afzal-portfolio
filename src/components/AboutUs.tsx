@@ -16,7 +16,7 @@ const AboutUs = () => {
           <div className="md:w-2/4 space-y-6">
             <div className="space-y-4">
               <AnimatedFadeIn direction="right">
-                <h2 className="text-4xl font-bold">About us</h2>
+                <h2 className="text-4xl font-bold">About</h2>
               </AnimatedFadeIn>
               <h5 className="text-lg font-semibold text-dark">
                 With over 13 years of specialized experience in healthcare
@@ -42,13 +42,12 @@ const AboutUs = () => {
                 "Results-driven digital campaigns for private practices and hospitals",
                 "Healthcare video storytelling for reputation and lead generation",
                 "CRO expert with focus on patient appointment booking journeys",
-                "On-Demand Assistance",
               ].map((text, index) => (
                 <div
                   key={index}
                   className="w-full sm:w-1/2 flex items-center gap-2 text-gray-800 text-sm mb-2"
                 >
-                  <MdCheckCircleOutline className="text-green-600 w-5 h-5 flex-shrink-0" />
+                  <MdCheckCircleOutline className="text-primary w-5 h-5 flex-shrink-0" />
 
                   {text}
                 </div>
@@ -57,7 +56,7 @@ const AboutUs = () => {
           </div>
 
           {/* Right Section */}
-          <div className="w-[100%] md:min-w-[440px] relative min-h-[500px] rounded-xl overflow-hidden shadow-lg">
+          <div className="w-[100%] lg:w-[440px] lg:w-[440px] lg:h-[540px] md:min-w-[440px] relative min-h-[500px] rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/aboutimg.webp"
               fill

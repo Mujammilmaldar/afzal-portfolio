@@ -5,24 +5,24 @@ const Hero = () => {
   return (
     <div id="home" className="relative w-full">
       {/* Hero Background Image */}
-      <div className="relative w-full h-[700px] overflow-hidden">
+      <div className="relative md:h-[540px] h-[540px] lg:h-[700px] overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="absolute inset-0 hero-img-container z-0" />
       </div>
 
       {/* Hero Content */}
-      <div className="ml-0 md:ml-12 absolute inset-0 z-20 flex flex-col justify-end mb-22 items-start px-4 md:px-8">
+      <div className="ml-0 lg:ml-22 absolute inset-0 z-20 flex flex-col justify-center lg:justify-center lg:items-start items-center px-4 md:px-8">
         <div className="mx-0">
-          <h1 className="text-3xl! w-[90%] md:text-5xl! lg:text-5xl! md:w-1/2! font-bold !text-white mb-2 uppercase">
+          <h1 className="text-[30px]! mt-45 w-[100%] lg:w-[90%] md:text-5xl! lg:text-5xl! md:w-1/2! font-bold !text-white mb-2 uppercase text-left leading-[1.2]">
             Healthcare Digital Marketing Consultant
           </h1>
-          <p className="text-white/80! sm:text-lg md:text-2xl! font-medium italic lg:min-w-[550px]! sm:min-w-[100%]! leading-relaxed lg:w-1/2">
+          <p className="hidden lg:block text-white/80! text-2xl! font-medium italic leading-relaxed lg:min-w-[550px] lg:w-1/2">
             13+ years of experience. Helping hospitals & doctors with proven
             digital marketing strategies
           </p>
           <div className="mt-10">
             <button
-              className="bg-primary text-white hover:bg-gray-100 px-8 py-3 rounded-full font-medium text-lg transition-all hover:shadow-lg hover:bg-primary hover:text-white"
+              className="hidden bg-primary lg:block text-white hover:bg-gray-100 px-8 py-3 rounded-full font-medium text-lg transition-all hover:shadow-lg hover:bg-primary hover:text-white"
               onClick={() => (window.location.href = "#calltoaction")}
             >
               Consult Now

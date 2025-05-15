@@ -49,7 +49,7 @@ export default function Navbar() {
         <div
               className="flex items-center justify-center px-5">
           <Link href="/" className="text-2xl">
-            Logo
+            <img src="/Logo.png" alt="" className="text-xl! h-10" />
           </Link>
           </div>
         <div className="hidden md:flex text-lg font-medium text-center">

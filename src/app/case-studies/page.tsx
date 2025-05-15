@@ -5,25 +5,25 @@ import Link from "next/link";
 
 const caseStudies = [
   {
-    title: "Pleasurē",
+    title: "Masina Heart Institute",
     description:
-      "We go deep to unlock insight and have the courage to act. We bring the right people together to challenge established thinking and drive transformation. Be work with our clients ...",
-    image: "/aboutimage.jpg",
-    pathforurl: "/pleasure",
+      "70% of initial patients came via Google Search & Ads. In 4 months, the website ranked on Page 1 for key terms. Video content boosted social media engagement, enhanced local brand recognition, and positioned the hospital as a trusted expert in advanced cardiac care in South Mumbai.",
+    image: "/MasinaHeartInstitute-CaseStudy-DigitalMarketingConsultantMumbai.webp",
+    pathforurl: "/masina-heart-institute",
   },
   {
-    title: "Innovatē",
+    title: "HVS Hospitals",
     description:
-      "We create solutions that drive innovation and unlock potential. With creativity and strategy combined, we deliver lasting impact.",
-    image: "/aboutimage.jpg",
-    pathforurl: "/innovatie",
+      "Hyper-local Google Ads delivered qualified leads from Day 1. The website ranked for high-intent keywords across Google and AI Overviews, including procedures, doctors, and local queries. Optimized content drove steady organic traffic growth, enhancing visibility, credibility, and appointment bookings.",
+    image: "/HVS-CaseStudy-DigitalMarketingConsultantMumbai.webp",
+    pathforurl: "/hvs-hospitals",
   },
   {
-    title: "Elevatē",
+    title: "Endovascular Clinic",
     description:
-      "Helping businesses reach new heights through transformative digital experiences and powerful design thinking.",
-    image: "/aboutimage.jpg",
-    pathforurl: "/elevate",
+      "The digital strategy drove direct patient enquiries via forms, calls, and WhatsApp, reducing referral dependency. SEO boosted rankings for key services, while structured content increased impressions and CTR. Video integration improved dwell time, reduced bounce rates, and enhanced mobile lead conversions. GMB ranked Top 3 locally.",
+    image: "/EndovascularClinic-DigitalMarketingConsultantMumbai.webp",
+    pathforurl: "/endovascular-clinic",
   },
 ];
 
@@ -34,26 +34,34 @@ export default function CaseStudiesPage() {
       <h1 className="text-4xl font-bold  text-primary text-center">Case Studies</h1>
       </div>
       <h3 className="font-bold text-2xl text-primary mb-10 px-3" >Featured Cases</h3>
-      <div className="grid md:grid-cols-3 mb-3 gap-12 px-3">
+      <div className="grid md:grid-cols-3 gap-10">
         {caseStudies.map((study) => (
-          <div key={study.pathforurl} className="flex flex-col">
-            <div className="w-full h-56 relative mb-6">
+          <div
+            key={study.pathforurl}
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden"
+          >
+            <div className="relative w-full h-76 md:h-76 group">
               <Image
                 src={study.image}
                 alt={study.title}
                 fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 340px"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 400px"
               />
             </div>
-            <h2 className="text-2xl font-semibold text-blue-800 mb-2">{study.title}</h2>
-            <p className="text-gray-700 mb-4">{study.description}</p>
-            <Link
-              href={`/case-studies/${study.pathforurl}`}
-              className="text-blue-600 font-medium hover:underline mt-auto"
-            >
-              Read More →
-            </Link>
+
+            <div className="p-6 flex flex-col flex-1">
+              <h2 className="text-3xl! font-semibold text-blue-800 mb-3">{study.title}</h2>
+              <p className="text-gray-700 text-sm flex-1 leading-relaxed">
+                {study.description}
+              </p>
+              <Link
+                href={`/case-studies/${study.pathforurl}`}
+                className="mt-5 text-blue-600 hover:text-blue-800 font-medium transition-colors"
+              >
+                Read More →
+              </Link>
+            </div>
           </div>
         ))}
       </div>

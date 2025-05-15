@@ -18,16 +18,12 @@ const CallToAction = () => {
             Please find below contact details and contact us today!
           </p>
           <div className="flex items-center !text-white mb-4 gap-4">
-            <FiPhone className="text-primary text-xl" />
-            <span className="!text-white">+321 456 78 901</span>
+            <FiPhone className="text-white text-xl" />
+            <span className="!text-white">+91 7303216569</span>
           </div>
           <div className="flex items-center !text-white mb-4 gap-4">
-            <FiMail className="text-primary text-xl" />
-            <span className="!text-white">Mailus@Consultlive.com</span>
-          </div>
-          <div className="flex items-center text-white gap-4">
-            <FiMapPin className="text-primary text-xl" />
-            <span className="!text-white" >Apple Street, New York, USA</span>
+            <FiMail className="text-white text-xl" />
+            <span className="!text-white">info@afzaldigital.com</span>
           </div>
         </div>
 

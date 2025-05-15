@@ -5,25 +5,25 @@ import AnimatedFadeIn from "./AnimatedHeading";
 
 const slides = [
   {
-    title: "Pleasurē",
+    title: "Masina Heart Institute",
     description:
-      "We go deep to unlock insight and have the courage to act. We bring the right people together to challenge established thinking and drive transformation.",
-    image: "/aboutimage.jpg",
-    pathforurl: "case-studies/pleasure",
+      "70% of initial patients came via Google Search & Ads. In 4 months, the website ranked on Page 1 for key terms. Video content boosted social media engagement, enhanced local brand recognition, and positioned the hospital as a trusted expert in advanced cardiac care in South Mumbai.",
+    image: "/MasinaHeartInstitute-CaseStudy-DigitalMarketingConsultantMumbai.webp",
+    pathforurl: "case-studies/masina-heart-institute",
   },
   {
-    title: "Innovatē",
+    title: "HVS Hospitals",
     description:
-      "We create solutions that drive innovation and unlock potential. With creativity and strategy combined, we deliver lasting impact.",
-    image: "/aboutimage.jpg",
-    pathforurl: "case-studies/innovatie",
+      "Hyper-local Google Ads delivered qualified leads from Day 1. The website ranked for high-intent keywords across Google and AI Overviews, including procedures, doctors, and local queries. Optimized content drove steady organic traffic growth, enhancing visibility, credibility, and appointment bookings.",
+    image: "/HVS-CaseStudy-DigitalMarketingConsultantMumbai.webp",
+    pathforurl: "case-studies/hvs-hospitals",
   },
   {
-    title: "Elevatē",
+    title: "Endovascular Clinic",
     description:
-      "Helping businesses reach new heights through transformative digital experiences and powerful design thinking.",
-    image: "/aboutimage.jpg",
-    pathforurl: "case-studies/elevate",
+      "The digital strategy drove direct patient enquiries via forms, calls, and WhatsApp, reducing referral dependency. SEO boosted rankings for key services, while structured content increased impressions and CTR. Video integration improved dwell time, reduced bounce rates, and enhanced mobile lead conversions. GMB ranked Top 3 locally.",
+    image: "/EndovascularClinic-DigitalMarketingConsultantMumbai.webp",
+    pathforurl: "case-studies/endovascular-clinic",
   },
 ];
 
@@ -39,7 +39,7 @@ const CaseStudies: React.FC = () => {
         {/* Image */}
         <div className="heading -mt-[20px] ml-7">
         <AnimatedFadeIn direction="right">
-          <h2 className="text-4xl">Featured Cases</h2>
+          <h2 className="text-4xl!">Featured Cases</h2>
         </AnimatedFadeIn>
         </div>
         <div className="single-row mt-10 flex lg:flex-row md:flex-col flex-col">
@@ -48,15 +48,15 @@ const CaseStudies: React.FC = () => {
             src={image}
             alt={title}
             fill
-            className="object-cover -left-[10%]! -top-[10%]! md:-left-0 md:-top-0"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover -left-[10%]! -top-[7%]! md:-left-0 md:-top-0"
+            sizes="(max-width: 768px) 80vw, 50vw"
           />
         </div>
 
         {/* Content */}
         <div className="p-6 md:p-8 flex flex-col justify-between w-full md:w-1/2">
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2 leading-[1.2]">
               {title}
             </h2>
             <div className="flex items-center gap-2 mb-4">
