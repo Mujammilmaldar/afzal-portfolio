@@ -57,9 +57,9 @@ const AboutUs = () => {
           </div>
 
           {/* Right Section */}
-          <div className="w-[100%] md:w-[40%] relative h-[400px] rounded-xl overflow-hidden shadow-lg">
+          <div className="w-[100%] md:min-w-[440px] relative min-h-[500px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/about.webp"
+              src="/aboutimg.webp"
               fill
               alt="CEO"
               className="object-cover rounded-xl"

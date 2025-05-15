@@ -155,3 +155,20 @@ span.span-for-about:hover{
   transform: translate(-50%, 10%); /* stops 10% from the top */
   transition: transform 0.7s ease-in-out;
 }
+.hero-img-container {
+  background-image: url('/heromobbg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-img-container {
+    background-image: url('/herobg.webp');
+    height: 100%;
+    width: 100%;
+    min-width: 440px;
+    min-height: 540px;
+  }
+}
