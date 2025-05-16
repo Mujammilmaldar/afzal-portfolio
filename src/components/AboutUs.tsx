@@ -21,8 +21,8 @@ const AboutUs = () => {
               <h5 className="text-lg font-semibold text-dark">
                 With over 13 years of specialized experience in healthcare
                 digital marketing, I have helped hospitals, clinics, and doctors
-                build a powerful online presence—driving more patients, reducing
-                lead costs, and improving conversions..
+                build a powerful online presence — driving more patients,
+                reducing lead costs, and improving conversions.
               </h5>
               <p className="text-gray-600">
                 I understand the unique challenges of marketing for hospitals
@@ -56,12 +56,13 @@ const AboutUs = () => {
           </div>
 
           {/* Right Section */}
-          <div className="w-[100%] lg:w-[440px] lg:w-[440px] lg:h-[540px] md:min-w-[440px] relative min-h-[500px] rounded-xl overflow-hidden shadow-lg">
+          <div className="w-full h-auto min-h-[360px] relative lg:max-h-[440px] lg:max-w-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
               src="/aboutimg.webp"
-              fill
               alt="CEO"
-              className="object-cover rounded-xl"
+              width={1200} // your actual image width
+              height={800} // your actual image height
+              className="w-full h-auto object-cover max-h-[480px] max-w-[400px] rounded-xl"
             />
           </div>
         </div>

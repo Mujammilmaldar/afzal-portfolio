@@ -5,9 +5,22 @@ const Hero = () => {
   return (
     <div id="home" className="relative w-full">
       {/* Hero Background Image */}
-      <div className="relative md:h-[540px] h-[540px] lg:h-[700px] overflow-hidden">
+      <div className="relative overflow-hidden w-full">
         <div className="absolute inset-0 bg-black/40 z-10" />
-        <div className="absolute inset-0 hero-img-container z-0" />
+
+        {/* Mobile Image */}
+        <img
+          src="/heromobbg.webp"
+          alt="hero"
+          className="w-full max-h-[620px] h-auto lg:min-h-[720px] object-cover block md:hidden z-0"
+        />
+
+        {/* Desktop Image */}
+        <img
+          src="/herobg.webp"
+          alt="hero"
+          className="w-full h-auto lg:min-h-[720px] object-cover hidden md:block z-0"
+        />
       </div>
 
       {/* Hero Content */}

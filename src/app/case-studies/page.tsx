@@ -16,7 +16,7 @@ const caseStudies = [
     description:
       "Hyper-local Google Ads delivered qualified leads from Day 1. The website ranked for high-intent keywords across Google and AI Overviews, including procedures, doctors, and local queries. Optimized content drove steady organic traffic growth, enhancing visibility, credibility, and appointment bookings.",
     image: "/HVS-CaseStudy-DigitalMarketingConsultantMumbai.webp",
-    pathforurl: "/hvs-hospitals",
+    pathforurl: "/hvs",
   },
   {
     title: "Endovascular Clinic",
