@@ -43,12 +43,12 @@ const CaseStudies: React.FC = () => {
         </AnimatedFadeIn>
         </div>
         <div className="single-row mt-10 flex lg:flex-row md:flex-col flex-col">
-        <div className="relative w-full h-64 md:h-auto md:w-1/2">
+        <div className="relative w-[80%] lg:w-1/2 h-58 lg:h-[350px]! md:h-auto md:w-1/2 mx-auto md:mx-0">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover -left-[10%]! -top-[7%]! md:-left-0 md:-top-0"
+            className="absolute object-cover left-1/2 lg:-left-[7%]! top-[7%] md:left-0 md:translate-x-0 lg:-left-[10%] lg:-top-[7%] md:-top-0"
             sizes="(max-width: 768px) 80vw, 50vw"
           />
         </div>
@@ -56,11 +56,27 @@ const CaseStudies: React.FC = () => {
         {/* Content */}
         <div className="p-6 md:p-8 flex flex-col justify-between w-full md:w-1/2">
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2 leading-[1.2]">
+          <div className="flex items-center justify-between gap-4 -mx-10 -my-4 lg:hidden">
+              <button
+                onClick={prevSlide}
+                className="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary text-[31px]!"
+                aria-label="Previous slide"
+              >
+                ‹
+              </button>
+              <button
+                onClick={nextSlide}
+                className="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary text-[31px]!"
+                aria-label="Next slide"
+              >
+                ›
+              </button>
+            </div>
+            <h2 className="text-3xl! text-primary! sm:text-3xl md:text-4xl font-semibold mb-2 leading-[1.2]">
               {title}
             </h2>
             <div className="flex items-center gap-2 mb-4">
-              <span className="w-12 h-1 bg-blue-600 rounded"></span>
+              <span className="w-12 h-1 bg-primary rounded"></span>
               <span className="w-6 h-1 bg-blue-400 rounded"></span>
               <span className="w-3 h-1 bg-blue-300 rounded"></span>
             </div>
@@ -71,23 +87,23 @@ const CaseStudies: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <button
-              className="border border-blue-600 text-blue-600 font-medium px-5 py-2 rounded-full hover:bg-blue-50 transition"
+              className="border border-primary text-primary font-medium px-5 py-2 rounded-full hover:bg-blue-50 transition"
               onClick={() => (window.location.href = pathforurl!)}
             >
               Read More
             </button>
 
-            <div className="flex items-center gap-3">
+            <div className="items-center hidden lg:flex gap-3">
               <button
                 onClick={prevSlide}
-                className="w-8 h-8 flex items-center justify-center rounded-full border border-blue-600 text-blue-600 text-[31px]!"
+                className="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary text-[31px]!"
                 aria-label="Previous slide"
               >
                 ‹
               </button>
               <button
                 onClick={nextSlide}
-                className="w-8 h-8 flex items-center justify-center rounded-full border border-blue-600 text-blue-600 text-[31px]!"
+                className="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary text-[31px]!"
                 aria-label="Next slide"
               >
                 ›
@@ -100,7 +116,7 @@ const CaseStudies: React.FC = () => {
               <span
                 key={idx}
                 className={`h-2 rounded-full transition-all duration-300 
-                  ${current === idx ? "w-8 bg-blue-600" : "w-4 bg-blue-300"}`}
+                  ${current === idx ? "w-8 bg-primary" : "w-4 bg-blue-300"}`}
               />
             ))}
           </div>

@@ -80,12 +80,12 @@ const TestimonialSection = () => {
                   />
                   <div className="flex flex-col gap-3">
                     <div className="heading flex gap-3">
-                      <div className=" text-4xl text-blue-600">❝</div>
+                      <div className=" text-4xl text-primary!">❝</div>
                       <p className="text-gray-700 italic">
                         {testimonial.content}
                       </p>
                     </div>
-                    <h6 className="font-semibold text-blue-600 ml-7">
+                    <h6 className="font-semibold text-primary! ml-7">
                       {testimonial.name}
                     </h6>
                     <p className="text-gray-600 text-sm ml-7 -mt-3">
@@ -96,7 +96,7 @@ const TestimonialSection = () => {
                         const starValue = i + 1;
                         if (testimonial.rating >= starValue) {
                           return (
-                            <AiFillStar key={i} color="#2a2ad4" size={20} />
+                            <AiFillStar key={i} color="var(--color-primary)" size={20} />
                           );
                         } else if (testimonial.rating >= starValue - 0.5) {
                           return (

@@ -1,8 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaFacebook, FaTwitter, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
-
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,10 +28,10 @@ export default function Navbar() {
 
   useEffect(() => {
     if (!isMenuOpen) return;
-    
+
     const closeMenu = () => setIsMenuOpen(false);
     document.addEventListener("click", closeMenu);
-    
+
     return () => document.removeEventListener("click", closeMenu);
   }, [isMenuOpen]);
 
@@ -46,52 +52,45 @@ export default function Navbar() {
     <div className={`bg-primary text-white ${isScrolled ? "shadow-md" : ""}`}>
       <nav className="container py-4 md:py-8 px-4 md:px-6 flex justify-between items-center relative">
         <div className="text-xl font-bold flex gap-4">
-        <div
-              className="flex items-center justify-center px-5">
-          <Link href="/" className="text-2xl">
-            <img src="/Logo.png" alt="" className="text-xl! h-10" />
-          </Link>
+          <div className="flex items-center justify-center px-5">
+            <Link href="/" className="text-2xl">
+              <img src="/Logo.png" alt="" className="text-xl! h-10" />
+            </Link>
           </div>
-        <div className="hidden md:flex text-lg font-medium text-center">
-          {navLinks.map((item, idx, arr) => (
-            <div
-              key={item.label}
-              className={`flex items-center justify-center px-5 ${
-                idx !== arr.length - 1 ? "border-r border-white/30" : ""
-              }`}
-            >
-              <Link
-                href={item.href}
-                className="hover:text-gray-300 transition-colors duration-300"
+          <div className="hidden md:flex text-lg font-medium text-center">
+            {navLinks.map((item, idx, arr) => (
+              <div
+                key={item.label}
+                className={`flex items-center justify-center px-5 ${
+                  idx !== arr.length - 1 ? "border-r border-white/30" : ""
+                }`}
               >
-                {item.label}
-              </Link>
-            </div>
-          ))}
-        </div>
+                <Link
+                  href={item.href}
+                  className="hover:text-gray-300 transition-colors duration-300"
+                >
+                  {item.label}
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="hidden md:flex space-x-4 text-xl">
           <Link
-            href="#"
+            href="tel:+1234567890"
             className="hover:text-gray-300 transition-colors duration-300"
           >
-            <FaFacebook />
+            <FiPhone className="text-white text-xl" />
           </Link>
           <Link
-            href="#"
+            href="mailto:afzal82khan@gmail.com"
             className="hover:text-gray-300 transition-colors duration-300"
           >
-            <FaTwitter />
-          </Link>
-          <Link
-            href="#"
-            className="hover:text-gray-300 transition-colors duration-300"
-          >
-            <FaInstagram />
+            <FiMail className="text-white text-xl" />
           </Link>
         </div>
 
-        <button 
+        <button
           className="md:hidden text-2xl focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -100,7 +99,7 @@ export default function Navbar() {
         </button>
 
         {isMenuOpen && (
-          <div 
+          <div
             className="absolute top-full right-0 left-0 bg-primary shadow-lg py-4 z-50 md:hidden"
             onClick={(e) => e.stopPropagation()}
           >
@@ -115,25 +114,19 @@ export default function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              
+
               <div className="flex space-x-6 py-4 justify-center text-xl">
                 <Link
-                  href="#"
+                  href="tel:+1234567890"
                   className="hover:text-gray-300 transition-colors duration-300"
                 >
-                  <FaFacebook />
+                  <FiPhone className="text-white text-xl" />
                 </Link>
                 <Link
-                  href="#"
+                  href="mailto:afzal82khan@gmail.com"
                   className="hover:text-gray-300 transition-colors duration-300"
                 >
-                  <FaTwitter />
-                </Link>
-                <Link
-                  href="#"
-                  className="hover:text-gray-300 transition-colors duration-300"
-                >
-                  <FaInstagram />
+                  <FiMail className="text-white text-xl" />
                 </Link>
               </div>
             </div>
