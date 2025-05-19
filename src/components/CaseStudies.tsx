@@ -39,7 +39,7 @@ const CaseStudies: React.FC = () => {
         {/* Image */}
         <div className="heading -mt-[20px] ml-7">
         <AnimatedFadeIn direction="right">
-          <h2 className="text-4xl!">Featured Cases</h2>
+          <h2 className="text-3xl!">Featured Cases</h2>
         </AnimatedFadeIn>
         </div>
         <div className="single-row mt-10 flex lg:flex-row md:flex-col flex-col">
@@ -72,7 +72,7 @@ const CaseStudies: React.FC = () => {
                 ›
               </button>
             </div>
-            <h2 className="text-3xl! text-primary! sm:text-3xl md:text-4xl font-semibold mb-2 leading-[1.2]">
+            <h2 className="text-2xl! text-primary! sm:text-3xl md:text-4xl font-semibold mb-2 leading-[1.2]">
               {title}
             </h2>
             <div className="flex items-center gap-2 mb-4">
