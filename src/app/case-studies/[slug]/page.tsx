@@ -282,7 +282,7 @@ export default function CaseStudyPage() {
                     className="min-w-full flex px-2 space-x-4 justify-center"
                   >
                     {group.map((img, i) => (
-                      <div key={i} className="relative w-full h-64">
+                      <div key={i} className="relative w-full h-84">
                         <Image
                           src={img}
                           alt={`Slide ${index * slidesToShow + i + 1}`}
