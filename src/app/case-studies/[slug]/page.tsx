@@ -193,16 +193,6 @@ export default function CaseStudyPage() {
 
   const chunkedSlides = chunkArray(study.sliderImages, slidesToShow);
 
-  // Auto-advance slide
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) =>
-        prev === chunkedSlides.length - 1 ? 0 : prev + 1
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [chunkedSlides.length]);
-
   const goToPrevSlide = () => {
     setCurrentSlide((prev) =>
       prev === 0 ? chunkedSlides.length - 1 : prev - 1
@@ -282,7 +272,7 @@ export default function CaseStudyPage() {
                     className="min-w-full flex px-2 space-x-4 justify-center"
                   >
                     {group.map((img, i) => (
-                      <div key={i} className="relative w-full h-84">
+                      <div key={i} className="relative lg:w-full min-h-84">
                         <Image
                           src={img}
                           alt={`Slide ${index * slidesToShow + i + 1}`}
