@@ -26,7 +26,7 @@ export default function ServiceCard({
           <h3 className="text-lg font-semibold text-primary mb-3">
             {title}
           </h3>
-          <p className="text-gray-500 text-sm mb-4">{description}</p>
+          <p className="text-gray-500 text-sm mb-10">{description}</p>
 
           {/* Toggle Arrow */}
           <button
