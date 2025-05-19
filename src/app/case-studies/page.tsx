@@ -29,7 +29,7 @@ const caseStudies = [
 
 export default function CaseStudiesPage() {
   return (
-    <section className="container mx-auto mb-14! ">
+    <section className="container mx-auto mb-14! px-2 ">
       <div className="card-title bg-light p-6 mb-14">
       <h1 className="text-4xl font-bold  text-primary text-center">Case Studies</h1>
       </div>
@@ -40,7 +40,7 @@ export default function CaseStudiesPage() {
             key={study.pathforurl}
             className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden"
           >
-            <div className="relative w-full h-76 md:h-76 group">
+            <div className="relative w-full as aspect-[16/13]">
               <Image
                 src={study.image}
                 alt={study.title}

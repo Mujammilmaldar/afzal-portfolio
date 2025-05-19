@@ -16,7 +16,7 @@ const slides = [
     description:
       "Hyper-local Google Ads delivered qualified leads from Day 1. The website ranked for high-intent keywords across Google and AI Overviews, including procedures, doctors, and local queries. Optimized content drove steady organic traffic growth, enhancing visibility, credibility, and appointment bookings.",
     image: "/HVS-CaseStudy-DigitalMarketingConsultantMumbai.webp",
-    pathforurl: "case-studies/hvs-hospitals",
+    pathforurl: "case-studies/hvs",
   },
   {
     title: "Endovascular Clinic",
@@ -39,7 +39,7 @@ const CaseStudies: React.FC = () => {
         {/* Image */}
         <div className="heading -mt-[20px] ml-7">
         <AnimatedFadeIn direction="right">
-          <h2 className="text-xl!">Featured Cases</h2>
+          <h2 className="md:text-2xl! lg:text-4xl!">Featured Cases</h2>
         </AnimatedFadeIn>
         </div>
         <div className="single-row mt-10 flex lg:flex-row md:flex-col flex-col">

@@ -206,9 +206,9 @@ export default function CaseStudyPage() {
   };
 
   return (
-    <div className="container mx-auto">
-      <div className="px-4 md:px-8 space-y-16">
-        <div className="w-full mx-auto mb-5">
+    <div className="">
+      <div className="px-2 lg:px-0 space-y-16">
+        <div className="container w-full mx-auto mb-5">
           <div className="card-title bg-light p-6">
             <h1 className="text-3xl! lg:text-4xl! font-bold  text-primary text-center">
               {study.title}
@@ -217,7 +217,7 @@ export default function CaseStudyPage() {
         </div>
 
         {/* Project Overview */}
-        <div className="py-12 mx-auto mb-5">
+        <div className="container py-12 mx-auto mb-5">
           <h2 className="text-2xl! md:text-3xl! font-bold mb-6 text-blue-900 pb-2 border-b border-gray-200">
             Project Overview
           </h2>
@@ -233,7 +233,7 @@ export default function CaseStudyPage() {
         </div>
 
         {/* Image Slider */}
-        <div className="max-w-full! bg-gray-100 py-12">
+        <div className="max-w-full! w-[100vw]! bg-gray-100 py-12">
           <div className="max-w-full mx-auto px-4">
             <h2 className="text-2xl! md:text-3xl font-bold mb-8 text-left text-blue-900">
               Digital Impact: Proven Results from Our Campaigns
@@ -317,7 +317,7 @@ export default function CaseStudyPage() {
                   {chunkedSlides.map((group, index) => (
                     <div
                       key={index}
-                      className="min-w-full flex px-2 space-x-4 justify-center"
+                      className="min-w-full flex px-0 lg:px-2 space-x-4 justify-center"
                     >
                       {group.map((img, i) => (
                         <div
@@ -355,7 +355,7 @@ export default function CaseStudyPage() {
         </div>
 
         {/* Challenges Section */}
-        <div className="max-w-4xl mx-auto">
+        <div className="container max-w-4xl mx-auto">
           <h2 className="text-3xl! md:text-3xl font-bold mb-6 text-blue-900 pb-2 border-b border-gray-200">
             Challenges
           </h2>
@@ -390,7 +390,7 @@ export default function CaseStudyPage() {
           </div>
         </div>
         {/* Strategy Section */}
-        <div className="bg-gray-50">
+        <div className="container bg-gray-50">
           <div className="w-full px-4 md:px-8 py-6 ">
             <h2 className="text-3xl! md:text-3xl font-bold mb-8 text-blue-900 text-left">
               Strategy &amp; Implementation
@@ -511,16 +511,17 @@ export default function CaseStudyPage() {
             <h3 className="font-semibold text-xl! text-blue-800 mb-4">
               Key Achievements:
             </h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              {study.results.metrics.map((metric, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center space-x-3 bg-blue-50 p-4 rounded-lg"
-                >
-                  <div className="text-blue-600 font-bold text-xl">•</div>
-                  <div className="text-gray-800 font-medium">{metric}</div>
-                </div>
-              ))}
+            <div>
+              <ul className="list-disc list-inside grid md:grid-cols-2 gap-4">
+                {study.results.metrics.map((metric, idx) => (
+                  <li
+                    key={idx}
+                    className="list-item flex items-center space-x-3 bg-blue-50 p-4 rounded-lg"
+                  >
+                    {metric}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

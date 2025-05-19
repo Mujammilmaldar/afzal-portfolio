@@ -45,9 +45,9 @@ const AboutUs = () => {
               ].map((text, index) => (
                 <div
                   key={index}
-                  className="w-full sm:w-1/2 flex items-center gap-2 text-gray-800 text-sm mb-2"
+                  className="w-full sm:w-1/2 flex items-start gap-2 text-gray-800 text-sm mb-2"
                 >
-                  <MdCheckCircleOutline className="text-primary w-5 h-5 flex-shrink-0" />
+                  <MdCheckCircleOutline className="text-primary mt-[2px] w-5 h-5 flex-shrink-0" />
 
                   {text}
                 </div>
