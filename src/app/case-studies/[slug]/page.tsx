@@ -234,8 +234,8 @@ export default function CaseStudyPage() {
 
         {/* Image Slider */}
         <div className="max-w-full! w-[100vw]! bg-gray-100 py-12">
-          <div className="max-w-full mx-auto px-4">
-            <h2 className="text-2xl! md:text-3xl font-bold mb-8 text-left text-blue-900">
+          <div className="max-w-full mx-auto ">
+            <h2 className="text-2xl! md:text-3xl font-bold mb-8 text-left text-blue-900 px-4">
               Digital Impact: Proven Results from Our Campaigns
             </h2>
 
@@ -243,7 +243,7 @@ export default function CaseStudyPage() {
             <div className="relative">
               {/* Prev Arrow (outside of the clipped area) */}
               <button
-                className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
+                className="absolute left-7 lg:-left-4 -bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToPrevSlide}
               >
                 <svg
@@ -275,7 +275,7 @@ export default function CaseStudyPage() {
 
               {/* Next Arrow */}
               <button
-                className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
+                className="absolute right-7 lg:-right-4 -bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToNextSlide}
               >
                 <svg
