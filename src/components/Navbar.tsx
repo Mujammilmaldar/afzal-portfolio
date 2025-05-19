@@ -50,11 +50,11 @@ export default function Navbar() {
 
   return (
     <div className={`bg-primary text-white ${isScrolled ? "shadow-md" : ""}`}>
-      <nav className="container py-4 md:py-8 px-4 md:px-6 flex justify-between items-center relative">
+      <nav className="container py-4 md:py-5 px-4 md:px-6 flex justify-between items-center relative">
         <div className="text-xl font-bold flex gap-4">
           <div className="flex items-center justify-center px-5">
             <Link href="/" className="text-2xl">
-              <img src="/Logo.png" alt="" className="text-xl! h-10" />
+              <img src="/afzalkhanlogo-healthcaredigitalmarketing.svg" alt="" className="text-xl! h-10" />
             </Link>
           </div>
           <div className="hidden md:flex text-lg font-medium text-center">
@@ -77,16 +77,16 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex space-x-4 text-xl">
           <Link
-            href="tel:+1234567890"
-            className="hover:text-gray-300 transition-colors duration-300"
+            href="tel:+7303216569"
+            className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
           >
-            <FiPhone className="text-white text-xl" />
+            <FiPhone className="text-white text-xl" /> +91 7303216569
           </Link>
           <Link
             href="mailto:afzal82khan@gmail.com"
-            className="hover:text-gray-300 transition-colors duration-300"
+            className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
           >
-            <FiMail className="text-white text-xl" />
+            <FiMail className="text-white text-xl" /> afzal82khan@gmail.com
           </Link>
         </div>
 
@@ -115,18 +115,18 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <div className="flex space-x-6 py-4 justify-center text-xl">
+              <div className="flex flex-col gap-2 space-x-6 py-4 justify-center text-xl">
                 <Link
-                  href="tel:+1234567890"
-                  className="hover:text-gray-300 transition-colors duration-300"
+                  href="tel:+7303216569"
+                  className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
                 >
-                  <FiPhone className="text-white text-xl" />
+                  <FiPhone className="text-white text-xl" /> 7303216569
                 </Link>
                 <Link
                   href="mailto:afzal82khan@gmail.com"
-                  className="hover:text-gray-300 transition-colors duration-300"
+                  className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
                 >
-                  <FiMail className="text-white text-xl" />
+                  <FiMail className="text-white text-xl" /> afzal82khan@gmail.com
                 </Link>
               </div>
             </div>

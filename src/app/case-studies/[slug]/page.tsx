@@ -75,7 +75,7 @@ const CaseStudies: Record<
     description:
       "Heart & Vascular Superspeciality Hospitals, with centers in Ghatkopar and Dadar, aimed to establish a strong digital presence. The project involved building a fast, SEO-optimized website with advanced search, multilingual support, and conversion tracking, coupled with a hyper-local Google Ads strategy for immediate lead generation.",
     sliderImages: [
-      "/hvs/h1.webp",
+      "/hvs/HVS-CaseStudyNewImage.webp",
       "/hvs/h2.webp",
       "/hvs/h3.webp",
       "/hvs/h4.webp",
