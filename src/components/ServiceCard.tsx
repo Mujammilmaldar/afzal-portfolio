@@ -22,7 +22,7 @@ export default function ServiceCard({
       >
         {/* Icon + Text */}
         <div className="text-primary text-4xl">{icon}</div>
-        <div className="content px-4">
+        <div className="content px-2 lg:px-4 text-left">
           <h3 className="text-lg font-semibold text-primary mb-3">
             {title}
           </h3>

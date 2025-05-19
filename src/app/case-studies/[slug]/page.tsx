@@ -259,15 +259,15 @@ export default function CaseStudyPage() {
                       r="40"
                       fill="white"
                       stroke="#e0e0e0"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                     <path
                       d="M60,30 L40,50 L60,70"
                       fill="none"
                       stroke="#333"
-                      stroke-width="5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                 </svg>
@@ -291,15 +291,15 @@ export default function CaseStudyPage() {
                       r="40"
                       fill="white"
                       stroke="#e0e0e0"
-                      stroke-width="2"
+                      strokeWidth="2"
                     />
                     <path
                       d="M40,30 L60,50 L40,70"
                       fill="none"
                       stroke="#333"
-                      stroke-width="5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                 </svg>
