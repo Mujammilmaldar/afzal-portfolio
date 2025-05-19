@@ -235,86 +235,117 @@ export default function CaseStudyPage() {
         {/* Image Slider */}
         <div className="w-full bg-gray-100 py-12">
           <div className="max-w-full mx-auto px-4">
-            <h2 className="text-3xl! md:text-3xl font-bold mb-8 text-left text-blue-900">
+            <h2 className="text-2xl! md:text-3xl font-bold mb-8 text-left text-blue-900">
               Digital Impact: Proven Results from Our Campaigns
             </h2>
 
-            <div className="relative overflow-hidden">
-              {/* Previous Arrow */}
+            {/* OUTER container just for positioning (no overflow rules) */}
+            <div className="relative">
+              {/* Prev Arrow (outside of the clipped area) */}
+              {/* Prev Arrow */}
               <button
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
+                className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToPrevSlide}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-800"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 100 100"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 19l-7-7 7-7"
-                  />
+                  <g id="leftArrow">
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="40"
+                      fill="white"
+                      stroke="#e0e0e0"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M60,30 L40,50 L60,70"
+                      fill="none"
+                      stroke="#333"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
                 </svg>
               </button>
 
-              {/* Slider Track */}
-              <div
-                className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
-                {chunkedSlides.map((group, index) => (
-                  <div
-                    key={index}
-                    className="min-w-full flex px-2 space-x-4 justify-center"
-                  >
-                    {group.map((img, i) => (
-                      <div key={i} className="relative lg:w-full min-h-84">
-                        <Image
-                          src={img}
-                          alt={`Slide ${index * slidesToShow + i + 1}`}
-                          fill
-                          className="object-cover rounded-lg shadow-md"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
-
               {/* Next Arrow */}
               <button
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
+                className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToNextSlide}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-blue-800"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 100 100"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
+                  <g id="rightArrow">
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="40"
+                      fill="white"
+                      stroke="#e0e0e0"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M40,30 L60,50 L40,70"
+                      fill="none"
+                      stroke="#333"
+                      stroke-width="5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
                 </svg>
               </button>
 
-              {/* Bullets */}
+              {/* INNER wrapper *that* actually hides overflow */}
+              <div className="overflow-hidden">
+                {/* Your sliding track */}
+                <div
+                  className="flex transition-transform duration-500 ease-in-out"
+                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                >
+                  {chunkedSlides.map((group, index) => (
+                    <div
+                      key={index}
+                      className="min-w-full flex px-2 space-x-4 justify-center"
+                    >
+                      {group.map((img, i) => (
+                        <div
+                          key={i}
+                          className="relative w-full min-h-84 max-h-94" // Keep your original height constraints
+                        >
+                          <Image
+                            src={img}
+                            alt={`Slide ${index * slidesToShow + i + 1}`}
+                            fill
+                            className="object-cover rounded-lg shadow-md" // Keep original classes
+                            sizes="(max-width: 768px) 100vw, 50vw" // Optimize loading
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Bullets are outside the clipped area too */}
               <div className="flex justify-center mt-4 space-x-2">
-                {chunkedSlides.map((_, index) => (
+                {chunkedSlides.map((_, idx) => (
                   <button
-                    key={index}
+                    key={idx}
                     className={`w-3 h-3 rounded-full ${
-                      currentSlide === index ? "bg-blue-600" : "bg-gray-300"
+                      currentSlide === idx ? "bg-blue-600" : "bg-gray-300"
                     }`}
-                    onClick={() => setCurrentSlide(index)}
+                    onClick={() => setCurrentSlide(idx)}
                   />
                 ))}
               </div>
