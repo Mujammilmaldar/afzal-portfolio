@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import AnimatedFadeIn from "./AnimatedHeading";
 
@@ -18,12 +19,22 @@ const CallToAction = () => {
             Please find below contact details and contact us today!
           </p>
           <div className="flex items-center !text-white mb-4 gap-4">
+          <Link
+            href="tel:+91 7303216569"
+            className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
+          >
             <FiPhone className="text-white text-xl" />
             <span className="!text-white">+91 7303216569</span>
+          </Link>
           </div>
           <div className="flex items-center !text-white mb-4 gap-4">
+          <Link
+            href="mailto:afzal82khan@gmail.com"
+            className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
+          >
             <FiMail className="text-white text-xl" />
             <span className="!text-white">info@afzaldigital.com</span>
+            </Link>
           </div>
         </div>
 
