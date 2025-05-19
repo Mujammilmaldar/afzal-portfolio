@@ -233,7 +233,7 @@ export default function CaseStudyPage() {
         </div>
 
         {/* Image Slider */}
-        <div className="w-full bg-gray-100 py-12">
+        <div className="max-w-full! bg-gray-100 py-12">
           <div className="max-w-full mx-auto px-4">
             <h2 className="text-2xl! md:text-3xl font-bold mb-8 text-left text-blue-900">
               Digital Impact: Proven Results from Our Campaigns
@@ -242,7 +242,6 @@ export default function CaseStudyPage() {
             {/* OUTER container just for positioning (no overflow rules) */}
             <div className="relative">
               {/* Prev Arrow (outside of the clipped area) */}
-              {/* Prev Arrow */}
               <button
                 className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToPrevSlide}
@@ -307,7 +306,9 @@ export default function CaseStudyPage() {
               </button>
 
               {/* INNER wrapper *that* actually hides overflow */}
-              <div className="overflow-hidden">
+              <div className="overflow-hidden min-h-60">
+                {" "}
+                {/* Set a fixed height here */}
                 {/* Your sliding track */}
                 <div
                   className="flex transition-transform duration-500 ease-in-out"
@@ -321,14 +322,14 @@ export default function CaseStudyPage() {
                       {group.map((img, i) => (
                         <div
                           key={i}
-                          className="relative w-full min-h-84 max-h-94" // Keep your original height constraints
+                          className="relative w-full aspect-[16/13]" // Using aspect ratio to maintain proportional height
                         >
                           <Image
                             src={img}
                             alt={`Slide ${index * slidesToShow + i + 1}`}
                             fill
-                            className="object-cover rounded-lg shadow-md" // Keep original classes
-                            sizes="(max-width: 768px) 100vw, 50vw" // Optimize loading
+                            className="object-cover rounded-lg shadow-md"
+                            sizes="(max-width: 768px) 100vw, 33vw"
                           />
                         </div>
                       ))}

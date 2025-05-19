@@ -151,7 +151,3 @@ span.span-for-about:hover{
   pointer-events: none;
 }
 
-.main-card-service:hover .down-side-content {
-  transform: translate(-50%, 10%); /* stops 10% from the top */
-  transition: transform 0.7s ease-in-out;
-}
