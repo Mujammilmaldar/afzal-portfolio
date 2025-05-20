@@ -91,7 +91,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-2xl focus:outline-none"
+          className="md:hidden text-xl! focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >

@@ -16,17 +16,11 @@ export default function RootLayout({
         <meta name="description" content="With over 13 years of specialized experience in healthcare digital marketing, I have helped hospitals, clinics, and doctors build a powerful online presence — driving more patients, reducing lead costs, and improving conversions."
         />
         <meta property="og:title" content="Healthcare Digital Marketing Consultant in Mumbai" />
-
         <meta property="og:description" content="With 13+ years in healthcare digital marketing, I have helped hospitals, clinics & doctors grow their online presence and attract more patients. Know More!" />
-
         <meta property="og:url" content="https://afzaldigital.com/" />
-
         <meta property="og:image" content="https://afzaldigital.com/heromobbg.webp" />
         <meta property="og:type" content="website" />
-
-        <meta
-          property="og:site_name"
-          content="Healthcare Digital Marketing Consultant"
+        <meta property="og:site_name" content="Healthcare Digital Marketing Consultant"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
