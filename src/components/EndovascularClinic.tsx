@@ -97,9 +97,9 @@ export default function HVSCaseStudy() {
         </div>
 
         {/* Image Slider */}
-        <div className="max-w-full! w-[100vw]! bg-gray-100 py-12">
+        <div className="max-w-full! w-[100vw]! bg-gray-100 py-8">
           <div className="max-w-full mx-auto">
-            <h2 className="text-2xl! md:text-3xl font-bold mb-8 text-left text-blue-900 px-4">
+            <h2 className="text-2xl! container mb-4! md:text-3xl font-bold mb-8 text-left text-blue-900 px-4">
               Digital Impact: Proven Results from Our Campaigns
             </h2>
 

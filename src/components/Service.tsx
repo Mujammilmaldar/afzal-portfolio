@@ -15,11 +15,11 @@ export default function ServicesSection() {
             Health Care Digital Marketing
           </h2>
         </AnimatedFadeIn>
-        <div className="grid md:grid-cols-3 bg-[#F9F9F9] md:p-1 sm:p-1 lg:p-1">
+        <div className="grid md:grid-cols-3 bg-[#F9F9F9] p-4 gap-4">
           <ServiceCard
             icon={<SlRocket />}
             title="Healthcare SEO"
-            description="A process of optimizing your medical website to appear higher in Google organic results when patients look for healthcare services online"
+            description="A process of optimizing your medical website to appear higher in Google organic results when patients look for healthcare services online."
             benefits="Benefits"
             benefitsdesc = "Drives organic traffic, attracts targeted patients, builds credibility & trust, and delivers long-term, cost-effective growth."
           />

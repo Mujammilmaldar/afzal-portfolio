@@ -28,7 +28,7 @@ const AboutUs = () => {
                 I understand the unique challenges of marketing for hospitals
                 and doctors - regulations, patient trust, hyper-local targeting
                 and the value of reputation. Whether it’s a surgeon looking to
-                rank on Google or a multi-speciality hospital needs branding on
+                rank on Google or a multi-speciality hospital needing branding on
                 digital channels, I bring healthcare specific strategy,
                 creativity and execution to every project.
               </p>

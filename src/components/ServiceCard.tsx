@@ -18,14 +18,26 @@ export default function ServiceCard({
   return (
     <div className="cards-style">
       <div
-        className="main-card-service p-2 py-5 md:p-5 lg:p-10 relative shadow-sm hover:shadow-md transition flex gap-4 overflow-hidden cursor-pointer md:h-[300px] lg:h-[200px]"
+        className="
+        main-card-service 
+        p-4 
+        py-6 
+        relative 
+        shadow-sm 
+        hover:shadow-md 
+        transition 
+        flex 
+        flex-col md:flex-row 
+        gap-4 
+        overflow-hidden 
+        cursor-pointer 
+        h-auto md:h-[20vw] lg:max-h-[30vh]
+        "
       >
         {/* Icon + Text */}
         <div className="text-primary text-4xl">{icon}</div>
         <div className="content px-2 lg:px-4 text-left">
-          <h3 className="text-lg font-semibold text-primary mb-3">
-            {title}
-          </h3>
+          <h3 className="text-lg font-semibold text-primary mb-3">{title}</h3>
           <p className="text-gray-500 text-sm mb-10">{description}</p>
 
           {/* Toggle Arrow */}
@@ -76,15 +88,18 @@ export default function ServiceCard({
             p-6
             transform transition-transform duration-700 ease-in-out
             -translate-x-1/2
-            ${isCrauselActive ? "translate-y-[10%] opacity-100" : "translate-y-full opacity-0"}
+            will-change-transform
+            ${
+              isCrauselActive
+                ? "translate-y-[10%] opacity-100"
+                : "translate-y-full opacity-0"
+            }
           `}
         >
           <div className="text-center mb-3">
             <h3 className="text-white text-2xl font-bold">{benefits}</h3>
           </div>
-          <p className="text-white! w-[85%] text-center">
-            {benefitsdesc}
-          </p>
+          <p className="text-white! w-[85%] text-center">{benefitsdesc}</p>
         </div>
       </div>
     </div>
