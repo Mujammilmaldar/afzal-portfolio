@@ -102,6 +102,10 @@ textarea,
 button {
   font-family: var(--font-body);
   font-size: var(--font-size-p);
+}  
+
+li{
+  font-size: var(--font-size-small);
 }
 
 button{
