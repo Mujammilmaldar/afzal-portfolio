@@ -174,7 +174,7 @@ export default function HVSCaseStudy() {
 
               {/* INNER wrapper *that* actually hides overflow */}
               <div className="overflow-hidden min-h-60">
-                {/* Your sliding track */}
+                {/* Your sliding track */}``
                 <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${currentSlide * 100}%)` }}
