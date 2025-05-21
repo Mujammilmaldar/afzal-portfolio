@@ -363,7 +363,7 @@ export default function HVSCaseStudy() {
               Brand Visibility &amp; Organic Growth
               </h4>
               <p className="text-gray-700">
-              Within 4 months, the website began ranking on Page 1 of Google for primary keywords
+              Within 4 months, the website began ranking on Page 1 of Google for primary keywords.
               </p>
             </div>
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm">
