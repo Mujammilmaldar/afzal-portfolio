@@ -19,7 +19,7 @@ export default function ServicesSection() {
           <ServiceCard
             icon={<SlRocket />}
             title="Healthcare SEO"
-            description="A process of optimizing your medical website to appear higher in Google organic results when patients look for healthcare services online."
+            description="Optimizing your medical website to rank higher in Google and AI-generated search results for healthcare-related queries."
             benefits="Benefits"
             benefitsdesc = "Drives organic traffic, attracts targeted patients, builds credibility & trust, and delivers long-term, cost-effective growth."
           />
