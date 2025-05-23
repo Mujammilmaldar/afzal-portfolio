@@ -77,15 +77,7 @@ export default function HVSCaseStudy() {
           </h2>
           <p className="text-lg text-primary font-bold">
             Client: Heart &amp; Vascular Superspeciality Hospitals | Location:
-            Mumbai | Website : 
-            <a
-              href="https://www.hvshospitals.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-primary font-bold"
-            >
-              &nbsp;www.hvshospitals.com
-            </a>
+            Mumbai | Website: www.hvshospitals.com
             <br />
             Scope of Work: Google Ads &amp; SEO
           </p>

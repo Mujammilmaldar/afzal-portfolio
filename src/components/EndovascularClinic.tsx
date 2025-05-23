@@ -74,15 +74,7 @@ export default function HVSCaseStudy() {
             Project Overview
           </h2>
           <p className="text-lg  font-bold">
-            Client: Endovascular Clinic | Location: Mumbai | Website:
-            <a
-              href="https://www.endovascularclinic.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-primary font-bold"
-            >
-             &nbsp;www.endovascularclinic.in
-            </a>
+            Client: Endovascular Clinic | Location: Mumbai | Website: www.endovascularclinic.in
             <br />
             Scope of Work: Google Ads, SEO, Local Listings, Video Integration
           </p>
