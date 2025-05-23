@@ -75,17 +75,18 @@ export default function HVSCaseStudy() {
           <h2 className="text-2xl! md:text-3xl! font-bold mb-6 text-blue-900 pb-2 border-b border-gray-200">
             Project Overview
           </h2>
-          <p className="text-lg text-primary font-medium">
+          <p className="text-lg text-primary font-bold">
             Client: Heart &amp; Vascular Superspeciality Hospitals | Location:
-            Mumbai | Website:
+            Mumbai | Website : 
             <a
-              href="www.hvshospitals.com"
+              href="https://www.hvshospitals.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className="underline text-primary font-bold"
             >
-              www.hvshospitals.com
+              &nbsp;www.hvshospitals.com
             </a>
+            <br />
             <br />
             Scope of Work: Google Ads &amp; SEO
           </p>

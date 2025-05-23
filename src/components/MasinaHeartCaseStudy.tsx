@@ -73,16 +73,17 @@ export default function HVSCaseStudy() {
           <h2 className="text-2xl! md:text-3xl! font-bold mb-6 text-blue-900 pb-2 border-b border-gray-200">
             Project Overview
           </h2>
-          <p className="text-lg  font-medium">
+          <p className="text-lg  font-bold">
             Client: Masina Heart Institute | Location: Mumbai | Website:
             <a
-              href="www.masinaheartinstitute.com"
+              href="https://www.masinaheartinstitute.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
+              className="underline text-primary font-bold"
             >
-              www.masinaheartinstitute.com
+              &nbsp;www.masinaheartinstitute.com
             </a>
+            <br />
             <br />
             Scope of Work: Google Ads, Video &amp; Social Media, SEO
           </p>
