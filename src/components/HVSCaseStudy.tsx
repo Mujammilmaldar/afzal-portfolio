@@ -87,9 +87,9 @@ export default function HVSCaseStudy() {
               &nbsp;www.hvshospitals.com
             </a>
             <br />
-            <br />
             Scope of Work: Google Ads &amp; SEO
           </p>
+            <br />
           <p className="mb-4 text-gray-700 leading-relaxed">
             Heart &amp; Vascular Superspeciality Hospitals, a newly launched
             brand with centers in Ghatkopar and Dadar, needed a online presence

@@ -84,9 +84,9 @@ export default function HVSCaseStudy() {
               &nbsp;www.masinaheartinstitute.com
             </a>
             <br />
-            <br />
             Scope of Work: Google Ads, Video &amp; Social Media, SEO
           </p>
+            <br />
           <p className="mb-4 text-gray-700 leading-relaxed">
             Masina Heart Institute, a newly launched cardiac unit aimed to
             position itself as a top- tier heart care center in South Mumbai. It

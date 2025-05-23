@@ -84,9 +84,9 @@ export default function HVSCaseStudy() {
              &nbsp;www.endovascularclinic.in
             </a>
             <br />
-            <br />
             Scope of Work: Google Ads, SEO, Local Listings, Video Integration
           </p>
+            <br />
           <p className="mb-4 text-gray-700 leading-relaxed">
             Endovascular Clinic is a specialized medical center offering
             advanced interventional radiology procedures such as varicose veins
