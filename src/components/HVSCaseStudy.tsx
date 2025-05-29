@@ -4,8 +4,18 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+// const sliderImages = [
+//   "/hvs/h3.webp",
+//   "/hvs/h3.webp",
+//   "/hvs/h3.webp",
+//   "/hvs/h3.webp",
+//   "/hvs/h5.webp",
+//   "/hvs/h6.webp",
+//   "/hvs/h7.webp",
+//   "/hvs/h8.webp",
+// ];
 const sliderImages = [
-  "/hvs/HVS-CaseStudyNewImage.webp",
+  "/hvs/h1.webp",
   "/hvs/h2.webp",
   "/hvs/h3.webp",
   "/hvs/h4.webp",
@@ -13,6 +23,7 @@ const sliderImages = [
   "/hvs/h6.webp",
   "/hvs/h7.webp",
   "/hvs/h8.webp",
+  "/hvs/h1.webp",
 ];
 
 export default function HVSCaseStudy() {
@@ -167,7 +178,7 @@ export default function HVSCaseStudy() {
 
               {/* INNER wrapper *that* actually hides overflow */}
               <div className="overflow-hidden min-h-60">
-                {/* Your sliding track */}``
+                {/* Your sliding track */}
                 <div
                   className="flex transition-transform duration-500 ease-in-out"
                   style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -178,7 +189,7 @@ export default function HVSCaseStudy() {
                       className="min-w-full flex px-0 lg:px-2 space-x-4 justify-center"
                     >
                       {group.map((img, i) => (
-                        <div key={i} className="relative w-full aspect-[16/13]">
+                        <div key={i} className="relative w-full aspect-[16/13]!">
                           <Image
                             src={img}
                             alt="not found"

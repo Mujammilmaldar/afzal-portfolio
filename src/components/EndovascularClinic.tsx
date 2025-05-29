@@ -181,7 +181,7 @@ export default function HVSCaseStudy() {
                             alt="not found"
                             fill
                             className="object-cover rounded-lg shadow-md"
-                            sizes="(max-width: 768px) 100vw, 33vw"
+                            sizes="(max-width: 768px) 70vw, 33vw"
                           />
                         </div>
                       ))}
