@@ -7,7 +7,7 @@ const slides = [
   {
     title: "Masina Heart Institute",
     description:
-      "70% of initial patients came via Google Search & Ads. In 4 months, the website ranked on Page 1 for key terms. Video content boosted social media engagement, enhanced local brand recognition, and positioned the hospital as a trusted expert in advanced cardiac care in South Mumbai.",
+      "Initial patients came via Google Search & Ads. In 4 months, the website ranked on Page 1 for key terms. Video content boosted social media engagement, enhanced local brand recognition, and positioned the hospital as a trusted expert in advanced cardiac care in South Mumbai.",
     image: "/MasinaHeartInstitute-CaseStudy-DigitalMarketingConsultantMumbai.webp",
     pathforurl: "case-studies/masina-heart-institute",
   },
