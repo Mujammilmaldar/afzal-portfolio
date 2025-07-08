@@ -4,16 +4,6 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-// const sliderImages = [
-//   "/hvs/h3.webp",
-//   "/hvs/h3.webp",
-//   "/hvs/h3.webp",
-//   "/hvs/h3.webp",
-//   "/hvs/h5.webp",
-//   "/hvs/h6.webp",
-//   "/hvs/h7.webp",
-//   "/hvs/h8.webp",
-// ];
 const sliderImages = [
   "/hvs/h1.webp",
   "/hvs/h2.webp",
