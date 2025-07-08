@@ -2,8 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "public/uploads" # where uploaded files are saved
+public_folder: "/uploads"      # how uploaded files are served in browser
+
+media_library:
+  name: uploadcare
 
 collections:
   - name: "posts"
