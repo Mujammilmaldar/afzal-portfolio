@@ -347,8 +347,7 @@ export default function HVSCaseStudy() {
               Lead Generation
               </h4>
               <p className="text-gray-700">
-              70% of initial patients came through direct digital marketing efforts (Google Search &amp;
-                Ads).
+              Initial patients came through direct digital marketing efforts (Google Search &amp; Ads).
               </p>
             </div>
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm">
