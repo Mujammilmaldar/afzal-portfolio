@@ -1,18 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Content Manager</title>
-  </head>
-  <body>
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      CMS.init({
-        config: "./config.yml",
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
+  <script>
+    window.CMS_CONFIG = {
+      backend: {
+        name: "github",
+        repo: "Mujammilmaldar/afzal-portfolio.git",
+        branch: "main",
+        base_url: "https://afzaldigital.com/",
+        auth_endpoint: "api/auth",
+      },
+      media_folder: "public/uploads",
+      public_folder: "/uploads",
+      collections: [
+        {
+          name: "posts",
+          label: "Blog Posts",
+          folder: "posts",
+          create: true,
+          slug: "{{slug}}",
+          fields: [
+            { label: "Title", name: "title", widget: "string" },
+            { label: "Date", name: "date", widget: "datetime" },
+            { label: "Body", name: "body", widget: "markdown" },
+          ],
+        },
+      ],
+    };
+
+    CMS.init({ config: window.CMS_CONFIG });
+  </script>
+</body>
 </html>
