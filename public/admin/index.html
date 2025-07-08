@@ -11,29 +11,7 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       CMS.init({
-        config: {
-          backend: {
-            name: 'github',
-            repo: 'Mujammilmaldar/afzal-portfolio.git', // Replace with your actual GitHub repo
-            branch: 'main'
-          },
-          media_folder: 'public/uploads',
-          public_folder: '/uploads',
-          collections: [
-            {
-              name: 'posts',
-              label: 'Blog Posts',
-              folder: 'posts',
-              create: true,
-              slug: '{{slug}}',
-              fields: [
-                { label: 'Title', name: 'title', widget: 'string' },
-                { label: 'Date', name: 'date', widget: 'datetime' },
-                { label: 'Body', name: 'body', widget: 'markdown' }
-              ]
-            }
-          ]
-        }
+        config: "./config.yml",
       });
     </script>
   </body>
