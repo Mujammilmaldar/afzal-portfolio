@@ -2,26 +2,9 @@
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./posts/**/*.md",
+    "./content/**/*.md",
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-// tailwind.config.js
-module.exports = {
-  extend: {
-    utilities: {
-      '.backface-hidden': {
-        'backface-visibility': 'hidden',
-      },
-      '.rotate-y-180': {
-        transform: 'rotateY(180deg)',
-      },
-    },
-  },
-};
-module.exports = {
   theme: {
     extend: {
       colors: {
@@ -30,8 +13,9 @@ module.exports = {
         secondary: 'var(--color-secondary)',
         tertiary: 'var(--color-tertiary)',
         dark: 'var(--color-dark)',
-        light: 'var(--color-light)', // ✅ BUT see note below
+        light: 'var(--color-light)',
       },
     },
   },
+  plugins: [],
 };

@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FiPhone, FiMail } from "react-icons/fi";
-import AnimatedFadeIn from "./AnimatedHeading";
+import dynamic from 'next/dynamic';
+const AnimatedFadeIn = dynamic(() => import('./AnimatedHeading'), { ssr: false });
 
 const CallToAction = () => {
   const router = useRouter();

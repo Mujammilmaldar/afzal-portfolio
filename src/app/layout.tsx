@@ -1,7 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import CallToAction from "@/components/CallToAction";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,9 +26,9 @@ export default function RootLayout({
       </head>
       <body>
         <main>
-          <Navbar />
-          {children}
-          <CallToAction />
+            <Navbar />
+            {children}
+            <CallToAction />
         </main>
       </body>
     </html>
