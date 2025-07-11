@@ -26,11 +26,7 @@ export default defineConfig({
     },
   },
   admin: {
-    authProvider: async () => {
-      const res = await fetch("/api/token") // We'll create this
-      if (!res.ok) throw new Error("Not authenticated")
-      return res.json()
-    },
+    auth: true, // enable Tina auth (no need for authProvider)
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {

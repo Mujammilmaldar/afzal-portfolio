@@ -1,9 +1,14 @@
 // src/pages/auth/login.tsx
-import { getCsrfToken, signIn } from "next-auth/react"
+import { getCsrfToken } from "next-auth/react"
+import { GetServerSidePropsContext } from "next"
 
-export default function Login({ csrfToken }) {
+interface Props {
+  csrfToken: string
+}
+
+export default function Login({ csrfToken }: Props) {
   return (
-    <form method="post" action="/api/auth/callback/credentials">
+    <form method="post"  name="callbackUrl" action="/api/auth/callback/credentials">
       <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
       <input name="username" type="text" placeholder="Username" />
       <input name="password" type="password" placeholder="Password" />
@@ -12,7 +17,7 @@ export default function Login({ csrfToken }) {
   )
 }
 
-Login.getInitialProps = async (context) => {
+Login.getInitialProps = async (context: GetServerSidePropsContext) => {
   return {
     csrfToken: await getCsrfToken(context),
   }

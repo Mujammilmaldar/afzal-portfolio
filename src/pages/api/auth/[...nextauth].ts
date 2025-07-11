@@ -1,4 +1,3 @@
-// src/pages/api/auth/[...nextauth].ts
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 
@@ -11,21 +10,18 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        if (
-          credentials?.username === "admin" &&
-          credentials?.password === "admin123"
-        ) {
-          return {
-            id: "1",
-            name: "admin",
-            email: "admin@example.com",
-          }
+        // Replace with your real check
+        if (credentials?.username === "admin" && credentials?.password === "admin123") {
+          return { id: "admin", name: "Admin", email: "admin@example.com" }
         }
         return null
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET || "tina_secret",
+  secret: process.env.NEXTAUTH_SECRET,
+  pages: {
+    signIn: "/auth/login",
+  },
 }
 
 export default NextAuth(authOptions)
