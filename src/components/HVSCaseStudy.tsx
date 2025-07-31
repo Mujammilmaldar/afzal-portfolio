@@ -104,7 +104,7 @@ export default function HVSCaseStudy() {
             <div className="relative">
               {/* Prev Arrow (outside of the clipped area) */}
               <button
-                className="absolute left-7 lg:-left-4 -bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
+                className="absolute h-10 w-10 left-7 lg:-left-4 -bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToPrevSlide}
               >
                 <svg
@@ -136,7 +136,7 @@ export default function HVSCaseStudy() {
 
               {/* Next Arrow */}
               <button
-                className="absolute right-7 lg:-right-4 -bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
+                className="absolute h-10 w-10 right-7 lg:-right-4 -bottom-10 lg:top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-70 hover:bg-opacity-100 p-2 rounded-full shadow-md transition-all"
                 onClick={goToNextSlide}
               >
                 <svg

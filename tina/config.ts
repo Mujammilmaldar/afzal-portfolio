@@ -41,15 +41,24 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
+            type: "string",
+            name: "author",
+            label: "Author",
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
           },
           {
             type: "rich-text",
             name: "excerpt",
             label: "Excerpt",
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
             isBody: true,
           },
         ],

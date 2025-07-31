@@ -1,7 +1,7 @@
 ---
 title: "The Future of Modern Web Development"
 author: "Afzal"
-date: "2025-07-10"
+date: "2025-07-10T00:00:00.000Z"
 excerpt: "Explore how modern tools like TinaCMS and Next.js are transforming the way we build and manage websites."
 ---
 

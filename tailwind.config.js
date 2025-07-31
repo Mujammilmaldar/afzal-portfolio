@@ -15,7 +15,26 @@ module.exports = {
         dark: 'var(--color-dark)',
         light: 'var(--color-light)',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+            color: '#374151',
+            h1: {
+              color: '#111827',
+            },
+            h2: {
+              color: '#111827',
+            },
+            h3: {
+              color: '#111827',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
