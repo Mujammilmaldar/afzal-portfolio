@@ -41,6 +41,12 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "image",
+            name: "mainImage",
+            label: "Main Image",
+            description: "The main image for the blog post",
+          },
+          {
             type: "string",
             name: "author",
             label: "Author",

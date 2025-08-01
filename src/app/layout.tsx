@@ -33,12 +33,10 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </head>
-      <body>
-        <main>
-            <Navbar />
-            {children}
-            <CallToAction />
-        </main>
+      <body className="bg-lighttype">
+        <Navbar />
+        {children}
+        <CallToAction />
       </body>
     </html>
   );

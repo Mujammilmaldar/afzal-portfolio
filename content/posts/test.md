@@ -1,5 +1,6 @@
 ---
 title: Healthcare Digital Marketing Strategies
+mainImage: /aboutimage.jpg
 author: Afzal Khan
 date: 2025-07-28T00:00:00.000Z
 excerpt: >
