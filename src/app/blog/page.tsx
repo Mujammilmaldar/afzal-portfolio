@@ -80,21 +80,6 @@ export default async function BlogPage() {
                     </div>
                   )}
                   
-                  <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
-                    {post.author && (
-                      <span className="font-medium">By {post.author}</span>
-                    )}
-                    {post.date && (
-                      <time dateTime={post.date}>
-                        {new Date(post.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric'
-                        })}
-                      </time>
-                    )}
-                  </div>
-                  
                   <Link
                     href={`/blog/${post._sys.filename}`}
                     className="mt-auto text-primary hover:text-primary/80 font-medium transition-colors flex items-center"
