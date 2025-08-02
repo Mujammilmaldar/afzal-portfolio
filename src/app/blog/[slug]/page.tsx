@@ -2,7 +2,7 @@ import { client } from "../../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import Link from "next/link";
 import Image from "next/image";
-
+import "../../mdfile.css"
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
 
