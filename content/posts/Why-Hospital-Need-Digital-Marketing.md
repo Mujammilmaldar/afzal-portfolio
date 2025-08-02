@@ -3,11 +3,7 @@ title: Why Hospital Need Digital Marketing?
 mainImage: /about.webp
 author: Mujammil
 date: 2025-07-27T18:30:00.000Z
-excerpt: |
-  ```python
-  print("hello world");
-
-  ```
+excerpt: ''
 ---
 
 Digital marketing is crucial for hospitals in today's landscape because it allows them to reach a wider audience, build trust with potential patients, and improve patient engagement. By leveraging online platforms, hospitals can effectively communicate their services, build a strong online presence, and ultimately attract more patients.
