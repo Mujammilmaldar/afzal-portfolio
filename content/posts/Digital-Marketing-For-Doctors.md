@@ -1,6 +1,6 @@
 ---
 title: Digital Marketing For Doctors
-mainImage: https://afzaldigital.com/uploads/Digitalmarketingforhospitals-healthcaredigitalmarketing.webp
+mainImage: /uploads/Digitalmarketingforhospitals-healthcaredigitalmarketing.webp
 author: Afzal
 date: 2025-08-02T21:12:10.000Z
 excerpt: >

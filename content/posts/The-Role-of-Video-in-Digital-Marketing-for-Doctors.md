@@ -1,6 +1,6 @@
 ---
 title: The Role of Video in Digital Marketing for Doctors
-mainImage: https://afzaldigital.com/uploads/videomarketing-healthcaredigitalmarketing.webp
+mainImage: /uploads/videomarketing-healthcaredigitalmarketing.webp
 author: Afzal
 date: 2025-08-02T20:00:00.000Z
 excerpt: >

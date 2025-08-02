@@ -1,6 +1,6 @@
 ---
 title: How to Gauge Your Digital Marketing Results
-mainImage: https://afzaldigital.com/uploads/analyticsgoogle-healthcaredigitalmarketing.webp
+mainImage: /uploads/analyticsgoogle-healthcaredigitalmarketing.webp
 author: Afzal
 date: 2025-08-02T20:13:00.000Z
 excerpt: >
