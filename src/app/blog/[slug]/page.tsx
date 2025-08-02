@@ -2,7 +2,7 @@ import { client } from "../../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import Link from "next/link";
 import Image from "next/image";
-import "../../mdfile.css"
+// import "../../mdfile.css"
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
 
@@ -53,8 +53,8 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
       </nav>
 
       {/* Article Content */}
-      <article className="container mx-auto px-4 md:px-10 lg:px-20 pb-16">
-        <div className="max-w-4xl mx-auto">
+      <article className="container  mx-auto px-4 md:px-10 lg:px-20 pb-16">
+        <div className="max-w-6xl box-shadow-blog mx-auto">
           {/* Article Header */}
           <header className="mb-12 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8 leading-tight">

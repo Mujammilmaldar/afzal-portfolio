@@ -64,7 +64,7 @@ const CallToAction = () => {
               className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
             >
               <FiMail className="text-white text-xl" />
-              <span className="!text-white">info@afzaldigital.com</span>
+              <span className="!text-white">afzal82khan@gmail.com</span>
             </Link>
           </div>
         </div>

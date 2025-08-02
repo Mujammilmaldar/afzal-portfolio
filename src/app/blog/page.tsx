@@ -28,9 +28,9 @@ export default async function BlogPage() {
       <div className="mx-auto px-4 md:px-10 lg:px-20 py-8">
         {posts.length === 0 ? (
           <div className="text-center py-20">
-            <h2 className="text-2xl font-semibold text-primary mb-4">
+            <h3 className="text-2xl font-semibold text-primary mb-4">
               No blog posts found
-            </h2>
+            </h3>
             <p className="text-gray-500">
               Blog posts will appear here once they are published.
             </p>
@@ -72,8 +72,8 @@ export default async function BlogPage() {
                 </div>
 
                 <div className="p-6 flex flex-col flex-1">
-                  <h2 className="text-3xl font-semibold text-primary mb-3 line-clamp-2">{post.title}</h2>
-                  
+                  <h3 className="text-3xl font-semibold text-primary mb-3 line-clamp-2">{post.title}</h3>
+
                   {post.excerpt && (
                     <div className="text-gray-700 text-sm mb-4 line-clamp-3 leading-relaxed">
                       <TinaMarkdown content={post.excerpt} />
