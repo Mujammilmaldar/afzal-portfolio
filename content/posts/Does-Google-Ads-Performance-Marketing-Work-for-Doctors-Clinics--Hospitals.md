@@ -1,6 +1,6 @@
 ---
 title: Does Google Ads Work For Doctors?
-mainImage: /uploads/GoogleAdsforDoctors-healthcaredigitalmarketing.webp
+mainImage: https://afzaldigital.com/uploads/GoogleAdsforDoctors-healthcaredigitalmarketing.webp
 author: Afzal
 date: 2025-08-02T19:54:00.000Z
 excerpt: >
