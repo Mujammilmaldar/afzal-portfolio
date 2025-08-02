@@ -1,6 +1,6 @@
 ---
 title: Why Hospital Need Digital Marketing?
-mainImage: /MasinaHeartInstitute-CaseStudy-DigitalMarketingConsultantMumbai.webp
+mainImage: /about.webp
 author: Mujammil
 date: 2025-07-27T18:30:00.000Z
 excerpt: |
