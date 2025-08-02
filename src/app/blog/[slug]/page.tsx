@@ -31,12 +31,6 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
           <div className="text-center">
             <h1 className="text-3xl font-bold text-primary mb-4">Post Not Found</h1>
             <p className="text-gray-600 mb-8 text-lg">The blog post you're looking for doesn't exist.</p>
-            <Link
-              href="/blog"
-              className="inline-flex items-center text-primary hover:text-primary/80 font-medium text-lg"
-            >
-              ← Back to Blog
-            </Link>
           </div>
         </div>
       </div>
