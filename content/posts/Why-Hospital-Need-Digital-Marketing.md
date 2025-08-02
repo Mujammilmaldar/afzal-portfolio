@@ -1,6 +1,6 @@
 ---
 title: Why Hospital Need Digital Marketing?
-mainImage: /about.webp
+mainImage: /uploads/Screenshot%202025-07-02%20120850.png
 author: Mujammil
 date: 2025-07-27T18:30:00.000Z
 excerpt: ''
