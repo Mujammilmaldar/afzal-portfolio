@@ -28,9 +28,9 @@ export async function POST(req: Request) {
     maxMessages: 100,
     rateDelta: 1000,
     rateLimit: 14,
-    connectionTimeout: 10000, // 10 seconds
-    greetingTimeout: 5000,    // 5 seconds
-    socketTimeout: 10000,     // 10 seconds
+    connectionTimeout: 10000,
+    greetingTimeout: 5000,  
+    socketTimeout: 10000,  
   });
 
   console.log("Sending email to:", process.env.SMTP_FROM);
