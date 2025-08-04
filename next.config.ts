@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  images: {
+    domains: ['afzaldigital.com'],
+  },
 };
 
 export default nextConfig;

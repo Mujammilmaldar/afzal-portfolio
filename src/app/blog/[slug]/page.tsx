@@ -71,7 +71,9 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
             {post.mainImage && (
               <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] mb-10 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src={post.mainImage}
+                  src={post.mainImage.startsWith('http') 
+                    ? post.mainImage 
+                    : `${post.mainImage}`} // This handles relative paths correctly
                   alt={post.title}
                   fill
                   className="object-cover"
