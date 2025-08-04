@@ -8,6 +8,7 @@ const AnimatedFadeIn = dynamic(() => import('./AnimatedHeading'), { ssr: false }
 
 const CallToAction = () => {
   const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,16 +24,26 @@ const CallToAction = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    setIsSubmitting(true);
+    
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    if (res.ok) {
-      router.push("/thank-you");
-    } else {
-      alert("Error sending message.");
+      if (res.ok) {
+        router.push("/thank-you");
+      } else {
+        const errorData = await res.json();
+        alert(errorData.error || "Error sending message.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -119,9 +130,10 @@ const CallToAction = () => {
             <div className="md:col-span-2">
               <button
                 type="submit"
-                className="w-full md:w-auto bg-primary text-white font-semibold px-8 py-3 rounded-full mt-2 hover:bg-primary transition"
+                disabled={isSubmitting}
+                className="w-full md:w-auto bg-primary text-white font-semibold px-8 py-3 rounded-full mt-2 hover:bg-primary transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                SUBMIT NOW
+                {isSubmitting ? "SENDING..." : "SUBMIT NOW"}
               </button>
             </div>
           </form>
