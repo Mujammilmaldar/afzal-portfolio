@@ -46,11 +46,14 @@ export default async function BlogPage() {
                 <div className="relative w-full aspect-[16/10]">
                   {post.mainImage ? (
                     <Image
-                      src={post.mainImage}
+                      src={post.mainImage.startsWith('http') 
+                        ? post.mainImage 
+                        : `https://afzaldigital.com${post.mainImage}`} // Add domain for relative paths
                       alt={post.title}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
                     />
                   ) : (
                     <div className="w-full h-full bg-gray-200 flex items-center justify-center">

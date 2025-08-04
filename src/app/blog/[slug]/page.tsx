@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
                 <Image
                   src={post.mainImage.startsWith('http') 
                     ? post.mainImage 
-                    : `${post.mainImage}`} // This handles relative paths correctly
+                    : `https://afzaldigital.com${post.mainImage}`} // Add domain for relative paths
                   alt={post.title}
                   fill
                   className="object-cover"

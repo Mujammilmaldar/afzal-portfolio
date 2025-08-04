@@ -13,7 +13,19 @@ const nextConfig: NextConfig = {
     ];
   },
   images: {
-    domains: ['afzaldigital.com'],
+    domains: ['afzaldigital.com', 'assets.tina.io'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'afzaldigital.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.tina.io',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
