@@ -313,19 +313,6 @@ function BlogCard({ post, index }: { post: any; index: number }) {
 
       {/* Card Content */}
       <div className="p-6 flex flex-col flex-1">
-        {/* Date */}
-        {post.date && (
-          <time className="text-primary/70 text-sm font-medium mb-3 flex items-center">
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            {new Date(post.date).toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </time>
-        )}
 
         <h3 className="text-xl font-bold text-primary mb-4 line-clamp-2 group-hover:text-primary/80 transition-colors leading-tight">
           {post.title}
