@@ -10,13 +10,21 @@ interface BlogPostProps {
 
 export default async function BlogPostPage({ params }: BlogPostProps) {
   const { slug } = await params;
+  const targetSlug = slug.toLowerCase();
   
   let post: any = null;
   let error = null;
 
   try {
+    // Find the actual filename by case-insensitive match
+    const list = await client.queries.postConnection();
+    const nodes = list.data.postConnection.edges?.map(e => e?.node).filter(Boolean) || [];
+    const matched = nodes.find((n: any) => n._sys?.filename?.toLowerCase() === targetSlug);
+
+    const filenameToFetch = (matched?.["_sys"]?.["filename"] || targetSlug) + ".md";
+
     const response = await client.queries.post({
-      relativePath: `${slug}.md`,
+      relativePath: filenameToFetch,
     });
     post = response.data.post;
   } catch (err) {
@@ -117,7 +125,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     const posts = response.data.postConnection.edges?.map(edge => edge?.node).filter(Boolean) || [];
     
     return posts.map((post: any) => ({
-      slug: post._sys.filename,
+      slug: post._sys.filename.toLowerCase(),
     }));
   } catch (error) {
     console.error("Error generating static params:", error);

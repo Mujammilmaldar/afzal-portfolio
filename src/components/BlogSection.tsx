@@ -326,7 +326,7 @@ function BlogCard({ post, index }: { post: any; index: number }) {
         
         {/* Read More Link */}
         <Link
-          href={`/blog/${post._sys.filename}`}
+          href={`/blog/${post._sys.filename.toLowerCase()}`}
           className="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-all duration-300 mt-auto group/link border-b-2 border-transparent hover:border-primary/30 pb-1"
         >
           Read Full Article

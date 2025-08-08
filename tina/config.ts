@@ -69,8 +69,8 @@ export default defineConfig({
           },
         ],
         ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/blog/${document._sys.filename}`,
+          // Ensure router uses lowercase slug
+          router: ({ document }) => `/blog/${document._sys.filename.toLowerCase()}`,
         },
       },
     ],

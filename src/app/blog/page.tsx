@@ -84,7 +84,7 @@ export default async function BlogPage() {
                   )}
                   
                   <Link
-                    href={`/blog/${post._sys.filename}`}
+                    href={`/blog/${post._sys.filename.toLowerCase()}`}
                     className="mt-auto text-primary hover:text-primary/80 font-medium transition-colors flex items-center"
                   >
                     Read More
