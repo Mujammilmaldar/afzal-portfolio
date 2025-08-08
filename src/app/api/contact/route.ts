@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     port: parseInt(process.env.SMTP_PORT || "587"),
     secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_FROM,
+      user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
     // Optimize for speed
@@ -33,8 +33,11 @@ export async function POST(req: Request) {
     socketTimeout: 10000,  
   });
 
-  console.log("Sending email to:", process.env.SMTP_FROM);
-  console.log("Sending email to:", process.env.SMTP_USER);
+  console.log("SMTP Configuration:");
+  console.log("SMTP_USER:", process.env.SMTP_USER);
+  console.log("SMTP_FROM:", process.env.SMTP_FROM);
+  console.log("SMTP_PASS:", process.env.SMTP_PASS ? "***PROVIDED***" : "***MISSING***");
+  
   const mailOptions = {
     from: process.env.SMTP_FROM, 
     to: process.env.SMTP_USER,// Send to your email

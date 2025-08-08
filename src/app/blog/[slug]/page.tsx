@@ -69,14 +69,14 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
 
             {/* Featured Image */}
             {post.mainImage && (
-              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] mb-10 rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] mb-10 rounded-2xl overflow-hidden shadow-lg ">
                 <Image
                   src={post.mainImage.startsWith('http') 
                     ? post.mainImage 
                     : `https://afzaldigital.com${post.mainImage}`} // Add domain for relative paths
                   alt={post.title}
                   fill
-                  className="object-cover"
+                  className="object-cover p-6 rounded-2xl"
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
                 />
