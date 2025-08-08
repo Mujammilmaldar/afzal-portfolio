@@ -11,7 +11,7 @@ excerpt: >
 
 ### The Role of Video in Digital Marketing for Doctors, Hospitals & Clinics
 
-In today’s digital healthcare landscape, video is no longer optional — it’s essential. As patients increasingly turn to online platforms to search for doctors, research treatments, and understand medical conditions, the need for credible, visual content has never been greater. Video has emerged as the most powerful and engaging tool to educate, connect, and build trust with current and prospective patients. Whether you're a solo practitioner, a clinic owner, or a hospital marketing head, here’s why video should be a cornerstone of your digital marketing strategy — and how it can transform your patient outreach.
+In today’s digital healthcare landscape, video is no longer optional — it's essential. As patients increasingly turn to online platforms to search for doctors, research treatments, and understand medical conditions, the need for credible, visual content has never been greater. Video has emerged as the most powerful and engaging tool to educate, connect, and build trust with current and prospective patients. Whether you're a solo practitioner, a clinic owner, or a hospital marketing head, here’s why video should be a cornerstone of your digital marketing strategy — and how it can transform your patient outreach.
 
 ### 1. Builds Instant Trust and Human Connection
 
