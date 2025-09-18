@@ -1,95 +1,64 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST(req: Request) {
-  const { name, email, phone, message } = await req.json();
-
-  // Validate required environment variables
-  if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
-    console.error("Missing required SMTP environment variables");
-    return NextResponse.json({ 
-      success: false, 
-      error: "Server configuration error. Please contact administrator." 
-    }, { status: 500 });
-  }
-
-  // Create transporter using environment variables
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT || "587"),
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-    // Optimize for speed
-    pool: true,
-    maxConnections: 5,
-    maxMessages: 100,
-    rateDelta: 1000,
-    rateLimit: 14,
-    connectionTimeout: 10000,
-    greetingTimeout: 5000,  
-    socketTimeout: 10000,  
-  });
-
-  console.log("SMTP Configuration:");
-  console.log("SMTP_USER:", process.env.SMTP_USER);
-  console.log("SMTP_FROM:", process.env.SMTP_FROM);
-  console.log("SMTP_PASS:", process.env.SMTP_PASS ? "***PROVIDED***" : "***MISSING***");
-  
-  const mailOptions = {
-    from: process.env.SMTP_FROM, 
-    to: process.env.SMTP_USER,// Send to your email
-    subject: `New Contact Request from ${name}`,
-    html: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-        <h2 style="color: #274584; border-bottom: 2px solid #CEE1F8; padding-bottom: 10px;">
-          New Contact Request - Healthcare Digital Marketing
-        </h2>
-        
-        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-          <h3 style="color: #274584; margin-top: 0;">Contact Information</h3>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
-        </div>
-        
-        <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #274584;">
-          <h3 style="color: #274584; margin-top: 0;">Message</h3>
-          <p style="line-height: 1.6; color: #333;">${message}</p>
-        </div>
-        
-        <div style="margin-top: 30px; padding: 15px; background: #CEE1F8; border-radius: 8px; text-align: center;">
-          <p style="margin: 0; color: #274584; font-size: 14px;">
-            This message was sent from your Healthcare Digital Marketing website contact form.
-          </p>
-        </div>
-      </div>
-    `,
-    text: `Name: ${name}
-Email: ${email}
-Phone: ${phone || 'Not provided'}
-
-Message:
-${message}`,
-  };
-
+export async function POST(request: NextRequest) {
   try {
-    // Send email asynchronously - don't wait for completion
-    transporter.sendMail(mailOptions).then(() => {
-      console.log("Email sent successfully");
-    }).catch((err) => {
-      console.error("Mail Error:", err);
+    const body = await request.json();
+    const { name, email, phone, message } = body;
+
+    if (!name || !email || !message) {
+      return NextResponse.json({ 
+        success: false, 
+        error: "Please fill in all required fields." 
+      }, { status: 400 });
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json({ 
+        success: false, 
+        error: "Please enter a valid email address." 
+      }, { status: 400 });
+    }
+
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS || !process.env.SMTP_TO) {
+      return NextResponse.json({ 
+        success: false, 
+        error: "Server configuration error." 
+      }, { status: 500 });
+    }
+
+    console.log("📧 Starting email send...");
+
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
+      connectionTimeout: 3000,
+      greetingTimeout: 3000,
+      socketTimeout: 5000,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS?.replace(/\s/g, '') || '',
+      },
     });
 
-    // Return success immediately - don't wait for email
+    const mailOptions = {
+      from: process.env.SMTP_FROM,
+      to: process.env.SMTP_TO,
+      subject: "New Contact Request from " + name,
+      text: "Name: " + name + "\\nEmail: " + email + "\\nPhone: " + (phone || 'Not provided') + "\\n\\nMessage:\\n" + message
+    };
+
+    const result = await transporter.sendMail(mailOptions);
+    console.log("✅ Email sent:", result.messageId);
+    
     return NextResponse.json({ success: true });
-  } catch (err) {
-    console.error("Mail Error:", err);
+  } catch (error: any) {
+    console.error("❌ Error:", error);
     return NextResponse.json({ 
       success: false, 
-      error: "Failed to send email. Please try again later." 
+      error: "Failed to send email." 
     }, { status: 500 });
   }
 }
