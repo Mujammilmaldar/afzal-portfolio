@@ -2,7 +2,11 @@ import { client } from "../../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import Link from "next/link";
 import Image from "next/image";
-// import "../../mdfile.css"
+
+// Render blog posts on-demand (SSR) so build doesn't try to
+// connect to the TinaCMS GraphQL server (localhost:4001) at build time.
+export const dynamic = 'force-dynamic';
+
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
 
@@ -119,16 +123,3 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
   );
 }
 
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  try {
-    const response = await client.queries.postConnection();
-    const posts = response.data.postConnection.edges?.map(edge => edge?.node).filter(Boolean) || [];
-    
-    return posts.map((post: any) => ({
-      slug: post._sys.filename.toLowerCase(),
-    }));
-  } catch (error) {
-    console.error("Error generating static params:", error);
-    return [];
-  }
-}

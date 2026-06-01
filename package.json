@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
+    "build": "cross-env TINA_PUBLIC_IS_LOCAL=true tinacms build --local --skip-cloud-checks && next build",
+    "build:cloud": "tinacms build && next build",
     "start": "next start",
     "tinacms": "cross-env TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
     "lint": "next lint"
@@ -34,6 +35,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@tinacms/cli": "^2.4.1",
+    "@types/bcrypt": "^6.0.0",
     "@types/node": "^20.19.6",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",

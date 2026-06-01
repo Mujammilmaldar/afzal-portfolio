@@ -3,6 +3,9 @@ import Image from "next/image";
 import { client } from "../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
+// Render on-demand so build doesn't try to fetch from localhost:4001
+export const dynamic = 'force-dynamic';
+
 export default async function BlogPage() {
   let posts: any[] = [];
 
