@@ -1,12 +1,9 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Silence the "multiple lockfiles" workspace root warning
-  outputFileTracingRoot: path.join(__dirname, '../../'),
   async rewrites() {
     return [
       {
