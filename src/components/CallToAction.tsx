@@ -62,7 +62,7 @@ const CallToAction = () => {
           </p>
           <div className="flex items-center !text-white mb-4 gap-4">
             <Link
-              href="tel:+91 7303216569"
+              href="tel:+917303216569"
               className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
             >
               <FiPhone className="text-white text-xl" />

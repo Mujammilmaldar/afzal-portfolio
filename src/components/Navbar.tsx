@@ -78,7 +78,7 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex space-x-4 text-xl">
           <Link
-            href="tel:+91 7303216569"
+            href="tel:+917303216569"
             className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
           >
             <FiPhone className="text-white text-xl" /> +91 7303216569
@@ -118,7 +118,7 @@ export default function Navbar() {
 
               <div className="flex flex-col gap-2 space-x-6 py-4 justify-center text-xl">
                 <Link
-                  href="tel:+91 7303216569"
+                  href="tel:+917303216569"
                   className="hover:text-gray-300 flex gap-2 transition-colors duration-300"
                 >
                   <FiPhone className="text-white text-xl" /> 7303216569
