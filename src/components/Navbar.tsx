@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="text-xl font-bold flex gap-4">
           <div className="flex items-center justify-center px-5">
             <Link href="/" className="text-2xl">
-              <img src="/afzalkhan-healthcaredigitalmarketingconsultantMumbai-Logo.svg" alt="Afzal Khan - Healthcare Digital Marketing Consultant Mumbai" className="text-xl! h-10" />
+              <img src="/afzalkhan-healthcaredigitalmarketingconsultantMumbai-Logo.svg" alt="Afzal Khan - Healthcare Digital Marketing Consultant Mumbai" className="text-xl! h-14" />
             </Link>
           </div>
           <div className="hidden md:flex text-lg font-medium text-center">
